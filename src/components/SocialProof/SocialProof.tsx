@@ -128,7 +128,7 @@ const SocialProofBlock = () => {
             <div className="flex flex-col items-start sm:flex-row sm:justify-center ">
               <div className="flex-1 w-full min-w-0">
                 <div className="relative text-gray-400 focus-within:text-gray-600">
-                  <label for="email" className="sr-only"></label>
+                  <label htmlFor="email" className="sr-only"></label>
                   <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                     <svg
                       className="w-5 h-5"
