@@ -152,7 +152,7 @@ const SocialProofBlock = () => {
                     placeholder="Ingrese su E-Mail"
                     className="block w-full py-4 pl-10 pr-4 text-base text-black placeholder-gray-500 transition-all 
                     duration-200 border-transparent rounded-full focus:border-transparent focus:ring-0 caret-purple-600"
-                    required=""
+                    required
                   />
                 </div>
               </div>
