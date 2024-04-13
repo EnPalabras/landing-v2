@@ -25,7 +25,7 @@ export default function Products() {
     <section className="bg-white w-full px-2 lg:px-8 py-10 sm:py-16 lg:py-24 w-full space-y-12">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <div
-          className="flex flex-col items-center bg-white border border-gray-200 rounded-lg w-full 
+          className="flex flex-col items-center bg-white border border-gray-200 rounded-lg w-full md:w-2/3 mx-auto lg:w-full 
       shadow md:flex-row hover:cursor-pointer h-full transition-all duration-200"
         >
           <img
@@ -67,7 +67,7 @@ export default function Products() {
                   <SheetTitle>
                     <img
                       src={descLogo.src}
-                      className="hidden lg:block object-scale-down mx-auto w-full h-20 md:w-48 md:h-full rounded-t-lg md:rounded-l-lg"
+                      className="object-scale-down mx-auto w-full h-20 md:w-48 md:h-full rounded-t-lg md:rounded-l-lg"
                       alt=""
                     />
                     <Carousel className="object-cover">
