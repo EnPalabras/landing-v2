@@ -84,9 +84,9 @@ export const Path = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="text-gray-600 duration-300 group-hover:translate-y-1.5 group-hover:text-gray-900"
               >
                 <path d="M12 5v14"></path>

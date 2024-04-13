@@ -27,9 +27,9 @@ export default function HeroSectionImageWithReviews() {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                 </a>
@@ -110,7 +110,7 @@ export default function HeroSectionImageWithReviews() {
                       viewBox="1338.7 1396.4 112.83284 46.938464"
                       width="62"
                       height="26"
-                      enable-background="new 1338.7 1396.4 150 135.8"
+                      enableBackground="new 1338.7 1396.4 150 135.8"
                     >
                       <defs id="defs106" />
 
