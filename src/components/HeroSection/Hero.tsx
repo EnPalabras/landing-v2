@@ -44,14 +44,15 @@ export default function HeroSectionImageWithReviews() {
                 Fomentamos la colaboración y la creatividad a través de nuestras
                 experiencias lúdicas
               </p>
-              <div className="mt-7 grid gap-3 w-full sm:inline-flex justify-center lg:justify-start">
-                <a href="#contacto">
+              <div className="mt-7 grid grid-cols-2 place-items-center gap-3 w-full sm:inline-flex justify-center lg:justify-start">
+                <a href="#contacto" className="">
+                  {' '}
                   <Button size={'lg'}>Contactanos</Button>
                 </a>
                 <a href="#experiencias">
                   {' '}
                   <Button variant={'outline'} size={'lg'}>
-                    Ver Experiencias
+                    Experiencias
                   </Button>
                 </a>
               </div>

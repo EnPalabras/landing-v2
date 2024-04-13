@@ -6,7 +6,11 @@ export default function SocialProof() {
           ¿Para qué tener{' '}
           <span className="relative inline-block">
             <span className="absolute inline-block w-full h-2 bg-purple-300 bottom-1.5 translate-y-2"></span>
-            <span className="relative"> conversaciones profundas </span>
+            <span className="relative"> conversaciones </span>
+          </span>{' '}
+          <span className="relative inline-block">
+            <span className="absolute inline-block w-full h-2 bg-purple-300 bottom-1.5 translate-y-2"></span>
+            <span className="relative"> profundas </span>
           </span>{' '}
           en tu empresa?
         </h2>
@@ -23,7 +27,7 @@ export default function SocialProof() {
               />
 
               <img
-                className="absolute origin-bottom-right scale-90 rounded-md -bottom-20 -right-20"
+                className="absolute origin-bottom-right scale-90 rounded-md -bottom-20 -right-10"
                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/desconectados-regalo-empresas1-57ebcbfc96842f074916685182180725-640-0.webp"
                 // src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/smiling-businessman.jpg"
                 alt=""
@@ -41,22 +45,21 @@ const SocialProofBlock = () => {
     <section className="lg:order-2">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-left sm:text-center">
-          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
+          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600 text-justify lg:text-center">
             Las experiencias de nuestros usuarios dan cuenta de un cambio en la
             dinámica laboral. Una necesidad de mejorar las relaciones en el
             equipo y la posiblidad de conocer nuevas facetas y puntos en común
             para conectar.
           </p>
-          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
+          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600 text-justify lg:text-center">
             Por eso desde En Palabras, nos comprometemos y elegimos crear
             dinámicas que faciliten conversaciones profundas y reflexivas así,
             quien elige jugar, guarda en su memoria una experiencia
             significativa sobre sus deseos que recordará en el tiempo.
           </p>
         </div>
-
         <div
-          className="mt-8 space-y-8 sm:space-x-4 sm:mt-12 sm:flex sm:items-start sm:justify-center 
+          className="mx-auto w-full mx-auto mt-8 space-y-8 sm:space-x-4 sm:mt-12 sm:flex sm:items-start sm:justify-center 
         sm:space-y-0 md:space-x-10 lg:mt-20"
         >
           <div className="flex items-start">
@@ -159,7 +162,9 @@ const SocialProofBlock = () => {
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center w-auto px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-purple-600 border border-transparent rounded-full sm:ml-4 sm:mt-0 sm:w-auto hover:bg-purple-700 focus:bg-purple-700"
+                className="inline-flex items-center justify-center 
+                w-full px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-purple-600 border border-transparent 
+                rounded-full sm:ml-4 sm:mt-0 sm:w-auto hover:bg-purple-700 focus:bg-purple-700"
               >
                 Quiero que me contacten
                 <svg

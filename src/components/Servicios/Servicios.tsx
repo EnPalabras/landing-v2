@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Servicios() {
   return (
-    <section className="py-10 bg-gray-100 sm:py-16 lg:py-24 w-full">
+    <section className="py-10 bg-gray-100 sm:py-16 lg:py-24 w-full ">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex items-end justify-between">
           <div className="flex-1 text-center lg:text-left">
