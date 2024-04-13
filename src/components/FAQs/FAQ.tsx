@@ -59,7 +59,10 @@ export default function FAQs({ questions }: FAQAccordionProps) {
                 className="flex items-center justify-between hover:cursor-pointer"
                 onClick={() => toggleQuestion(idx)}
               >
-                <h2 className="text-lg font-bold leading-6 text-purple-700 hover:text-purple-600">
+                <h2
+                  className="text-lg font-bold leading-6 text-purple-700 
+                hover:text-purple-600"
+                >
                   {question}
                 </h2>
                 <Image
