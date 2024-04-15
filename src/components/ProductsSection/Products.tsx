@@ -402,7 +402,7 @@ export default function Products() {
   return (
     <section
       className="py-10 bg-white sm:pt-12 lg:pt-16 pb-0 w-full "
-      id="products"
+      id="productos"
     >
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex items-end justify-between">

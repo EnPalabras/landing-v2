@@ -1,9 +1,13 @@
+'use client'
+import { useState } from 'react'
+
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
+  SheetClose,
   SheetTrigger,
 } from '@/components/ui/sheet'
 import Link from 'next/link'
@@ -12,6 +16,8 @@ import Image from 'next/image'
 import logoEP from '@/../public/assets/logo-ep.png'
 
 export default function Header() {
+  const [isTOCOpen, setIsTOCOpen] = useState(false)
+
   return (
     <>
       <div className="mx-auto hidden lg:block border-b border-gray-200 bg-white w-full">
@@ -119,8 +125,8 @@ export default function Header() {
         </header>
       </div>
       <div className="flex justify-end w-full lg:hidden  md:px-6 bg-white">
-        <Sheet>
-          <SheetTrigger className="flex flex-row justify-between w-full items-center bg-white p-4">
+        <Sheet open={isTOCOpen}>
+          <div className="flex flex-row justify-between w-full items-center bg-white p-4">
             <svg
               className="w-8 h-8 text-transparent"
               aria-hidden="true"
@@ -146,6 +152,7 @@ export default function Header() {
             />
 
             <svg
+              onClick={() => setIsTOCOpen(true)}
               className="w-8 h-8 text-gray-800 dark:text-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
@@ -161,11 +168,10 @@ export default function Header() {
                 d="M5 7h14M5 12h14M5 17h14"
               />
             </svg>
-          </SheetTrigger>
+          </div>
           <SheetContent>
             <SheetHeader>
-              <SheetTitle>
-                {' '}
+              <div className="flex justify-end bg-white w-full">
                 <Image
                   src={logoEP}
                   className="mx-auto"
@@ -173,16 +179,36 @@ export default function Header() {
                   width={140}
                   height={120}
                 />
-              </SheetTitle>
+                <svg
+                  className="w-6 h-6 text-gray-800 dark:text-white cursor-pointer"
+                  onClick={() => setIsTOCOpen(false)}
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18 17.94 6M18 18 6.06 6"
+                  />
+                </svg>
+              </div>
               <SheetDescription className="bg-yellow"></SheetDescription>
             </SheetHeader>
             <div className="flex h-full justify-between flex-col">
               <div className="flex flex-col justify-start gap-4 my-4">
+                {' '}
                 <Link
                   className="group inline-flex h-9 w-full items-center 
                      rounded-md bg-white px-4 py-5 text-base font-medium 
                     transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
                   href="#"
+                  onClick={() => setIsTOCOpen(false)}
                 >
                   Inicio
                 </Link>
@@ -191,6 +217,7 @@ export default function Header() {
                      rounded-md bg-white px-4 py-5 text-base font-medium 
                     transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
                   href="#nosotros"
+                  onClick={() => setIsTOCOpen(false)}
                 >
                   Sobre Nosotros
                 </Link>
@@ -199,6 +226,7 @@ export default function Header() {
                      rounded-md bg-white px-4 py-5 text-base font-medium 
                     transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
                   href="#productos"
+                  onClick={() => setIsTOCOpen(false)}
                 >
                   Productos
                 </Link>
@@ -207,6 +235,7 @@ export default function Header() {
                      rounded-md bg-white px-4 py-5 text-base font-medium 
                     transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
                   href="#proceso"
+                  onClick={() => setIsTOCOpen(false)}
                 >
                   Proceso
                 </Link>
@@ -215,6 +244,7 @@ export default function Header() {
                      rounded-md bg-white px-4 py-5 text-base font-medium 
                     transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
                   href="#faqs"
+                  onClick={() => setIsTOCOpen(false)}
                 >
                   FAQs
                 </Link>
@@ -223,6 +253,7 @@ export default function Header() {
                 <Link
                   href="https://enpalabras.com.ar"
                   target="_blank"
+                  onClick={() => setIsTOCOpen(false)}
                   rel="noopener noreferrer"
                 >
                   <Button
@@ -249,7 +280,12 @@ export default function Header() {
                     Tienda
                   </Button>
                 </Link>
-                <Button className="px-2 py-1 text-xs">Contacto</Button>
+                <Button
+                  className="px-2 py-1 text-xs"
+                  onClick={() => setIsTOCOpen(false)}
+                >
+                  Contacto
+                </Button>
               </div>
             </div>
           </SheetContent>

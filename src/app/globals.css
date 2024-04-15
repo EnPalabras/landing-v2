@@ -23,6 +23,10 @@
   background: #555;
 }
 
+.fixed.z-50 button svg {
+  display: none;
+}
+
 html,
 body {
   width: 100%;
