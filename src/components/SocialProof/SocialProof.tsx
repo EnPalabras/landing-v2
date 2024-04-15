@@ -1,6 +1,9 @@
 export default function SocialProof() {
   return (
-    <section className="py-4 sm:py-8 lg:py-16 w-full bg-gray-100" id="nosotros">
+    <section
+      className="py-8 sm:py-12 lg:py-20 w-full bg-gray-100"
+      id="nosotros"
+    >
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl text-center max-w-5xl mx-auto">
           ¿Para qué tener{' '}
