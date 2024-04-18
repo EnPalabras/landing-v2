@@ -3,14 +3,14 @@ export default function Brands() {
     <section className="py-10 sm:py-16 lg:py-16 bg-gray-100 w-full bg-white">
       <div className="p-4 mx-auto max-w-7xl sm:p-6 lg:p-8 ">
         <div className="space-y-3 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-balance">
             <span className="text-purple-600">Confiaron</span> en{' '}
             <span className="relative inline-block">
               <span className="absolute inline-block w-full h-2 bg-purple-300 bottom-1.5 translate-y-2"></span>
               <span className="relative"> En Palabras </span>
             </span>
           </h2>
-          <p className="mx-auto max-w-[700px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="mx-auto max-w-[700px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-balance">
             Marcas y empresas que confiaron en nosotros para generar
             experiencias significativas a través de nuestros juegos y productos
             personalizados.

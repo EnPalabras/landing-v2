@@ -81,15 +81,7 @@ export default function Testimonials() {
               </div>
               <div className="py-4 flex justify-between flex-col">
                 <blockquote className="">
-                  {/* <p className="text-base text-black text-justify">
-                    "Mis clientes valoran mucho de mi agencia la creatividad y
-                    nuestras ganas de acercarles cosas nuevas, simples y que se
-                    puedan aplicar no solamente en los espacios de trabajo o
-                    corporativos sino que sea experiencias que ellos puedan
-                    llevar a otros espacios: la familia, los amigos. Y me parece
-                    que desconectarnos cumple con eso."
-                  </p> */}
-                  <p className="text-base text-black px-4 ">
+                  <p className="text-base text-black px-4 text-balance">
                     Mis clientes valoran nuestra creatividad y enfoque en
                     ofrecer ideas simples y aplicables en diferentes contextos,
                     no solo laborales. Desconectarnos cumple con esa visión.
@@ -172,7 +164,7 @@ export default function Testimonials() {
                     enriquecedoras con personas cercanas y no tanto. Lo súper
                     recomiendo como regalo empresarial."
                   </p> */}
-                  <p className="text-base text-black px-4 ">
+                  <p className="text-base text-black px-4 text-balance">
                     Desconectados me encantó y me ayudó a tener{' '}
                     <b>conversaciones enriquecedoras</b> con personas cercanas y
                     no tan cercanas. Lo recomiendo como regalo empresarial.
@@ -249,7 +241,7 @@ export default function Testimonials() {
               </div>
               <div className="py-4 flex flex-col">
                 <blockquote className="">
-                  <p className="text-base text-black px-4 ">
+                  <p className="text-base text-black px-4 text-balance">
                     Es un juego sencillo, sin instrucciones complicadas. Une a
                     personas de diferentes edades y genera conversaciones. El
                     valor está en las personas que lo juegan, no solo en el

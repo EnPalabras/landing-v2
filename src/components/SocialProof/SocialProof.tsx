@@ -9,7 +9,7 @@ export default function SocialProof() {
       id="nosotros"
     >
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl text-center max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl text-center max-w-5xl mx-auto text-balance">
           ¿Para qué tener{' '}
           <span className="relative inline-block">
             <span className="absolute inline-block w-full h-2 bg-purple-300 bottom-1.5 translate-y-2"></span>
@@ -28,7 +28,6 @@ export default function SocialProof() {
             <div className="relative max-w-sm mb-12">
               <img
                 className="object-bottom rounded-md"
-                // src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/man-eating-noodles.jpg"
                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/desconectados-juego-de-cartas-familiar1-67680530ca8c8f5ef616685182185530-640-0.webp"
                 alt="Imagen de familias jugando Desconectados"
               />
@@ -36,7 +35,6 @@ export default function SocialProof() {
               <img
                 className="absolute origin-bottom-right scale-90 rounded-md -bottom-20 -right-10"
                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/desconectados-regalo-empresas1-57ebcbfc96842f074916685182180725-640-0.webp"
-                // src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/smiling-businessman.jpg"
                 alt="Imagen de una empresa jugando Desconectados como regalo"
               />
             </div>
@@ -91,13 +89,13 @@ const SocialProofBlock = () => {
     <section className="lg:order-2">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-left sm:text-center">
-          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600 text-justify lg:text-center">
+          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600 text-justify lg:text-center ">
             Las experiencias de nuestros usuarios dan cuenta de un cambio en la
             dinámica laboral. Una necesidad de mejorar las relaciones en el
             equipo y la posiblidad de conocer nuevas facetas y puntos en común
             para conectar.
           </p>
-          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600 text-justify lg:text-center">
+          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600 text-justify lg:text-center ">
             Por eso desde En Palabras, nos comprometemos y elegimos crear
             dinámicas que faciliten conversaciones profundas y reflexivas así,
             quien elige jugar, guarda en su memoria una experiencia
