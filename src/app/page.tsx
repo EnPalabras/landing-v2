@@ -1,7 +1,6 @@
 import Brands from '@/components/Brands/Brands'
 import Contact from '@/components/Contact/Contact'
 import FAQs from '@/components/FAQs/FAQ'
-import Header from '@/components/Header/Header'
 import HeroSectionImageWithReviews from '@/components/HeroSection/Hero'
 import { Path } from '@/components/Path/Path'
 import Products from '@/components/ProductsSection/Products'
@@ -42,11 +41,14 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center">
       <HeroSectionImageWithReviews />
       <Products />
+
       <SocialProof />
-      <Path />
-      <Servicios />
-      <Testimonials />
       <Brands />
+
+      <Path />
+      <Testimonials />
+      <Servicios />
+
       <FAQs questions={questions} />
       <Contact />
     </main>

@@ -1,3 +1,7 @@
+'use client'
+
+import { useState } from 'react'
+
 export default function SocialProof() {
   return (
     <section
@@ -26,14 +30,14 @@ export default function SocialProof() {
                 className="object-bottom rounded-md"
                 // src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/man-eating-noodles.jpg"
                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/desconectados-juego-de-cartas-familiar1-67680530ca8c8f5ef616685182185530-640-0.webp"
-                alt=""
+                alt="Imagen de familias jugando Desconectados"
               />
 
               <img
                 className="absolute origin-bottom-right scale-90 rounded-md -bottom-20 -right-10"
                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/desconectados-regalo-empresas1-57ebcbfc96842f074916685182180725-640-0.webp"
                 // src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/smiling-businessman.jpg"
-                alt=""
+                alt="Imagen de una empresa jugando Desconectados como regalo"
               />
             </div>
           </div>
@@ -44,6 +48,45 @@ export default function SocialProof() {
 }
 
 const SocialProofBlock = () => {
+  const [formSent, setFormSent] = useState(false)
+
+  const [contactForm, setContactForm] = useState({
+    date: new Date(),
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    address: '',
+    iva: '',
+    juegos: '',
+    comments: '',
+  })
+
+  const editContactForm = (e: any) => {
+    setContactForm({
+      ...contactForm,
+      [e.target.name]: e.target.value,
+    })
+  }
+
+  const handleSubmit = async (e: any) => {
+    const values = [Object.values(contactForm)]
+    if (formSent) return
+
+    e.preventDefault()
+    const res = await fetch('https://ruleta-empresa.vercel.app/api/landing', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(values),
+    })
+
+    if (res.ok) {
+      setFormSent(true)
+    }
+  }
+
   return (
     <section className="lg:order-2">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -126,7 +169,7 @@ const SocialProofBlock = () => {
           </div>
         </div>
 
-        <form action="#" method="POST" className="max-w-xl mx-auto mt-12">
+        <form onSubmit={handleSubmit} className="max-w-xl mx-auto mt-12">
           <div
             className="sm:p-2 sm:bg-white sm:border-2 sm:border-transparent sm:rounded-full 
           sm:focus-within:border-purple-600 sm:focus-within:ring-1 sm:focus-within:ring-purple-600 "
@@ -155,6 +198,8 @@ const SocialProofBlock = () => {
                     type="email"
                     name="email"
                     id="email"
+                    value={contactForm.email}
+                    onChange={(e) => editContactForm(e)}
                     placeholder="Ingrese su E-Mail"
                     className="block w-full py-4 pl-10 pr-4 text-base text-black placeholder-gray-500 transition-all 
                     duration-200 border-transparent rounded-full focus:border-transparent focus:ring-0 caret-purple-600"
@@ -165,23 +210,43 @@ const SocialProofBlock = () => {
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center 
-                w-full px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-purple-600 border border-transparent 
-                rounded-full sm:ml-4 sm:mt-0 sm:w-auto hover:bg-purple-700 focus:bg-purple-700"
+                className={`inline-flex items-center justify-center 
+                w-full px-4 py-4 mt-4 font-semibold text-white transition-all duration-300 bg-purple-600 border border-transparent 
+                rounded-full sm:ml-4 sm:mt-0 sm:w-auto hover:bg-purple-700 focus:bg-purple-700
+                ${
+                  formSent &&
+                  'bg-green-500 hover:bg-green-600 focus:bg-green-600'
+                }
+                `}
               >
-                Quiero que me contacten
-                <svg
-                  className="w-5 h-5 ml-3 -mr-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                {formSent ? '' : 'Quiero que me contacten'}
+                {formSent ? (
+                  <svg
+                    className="flex-shrink-0 text-white w-7 h-7"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="white"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="w-5 h-5 ml-3 -mr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                )}
               </button>
             </div>
           </div>
