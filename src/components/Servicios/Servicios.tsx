@@ -30,8 +30,8 @@ export default function Servicios() {
                   className="block aspect-w-4 aspect-h-3"
                 >
                   <img
-                    className="object-cover w-full h-full "
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-1.jpg"
+                    className="object-cover w-full h-full max-h-[250px] "
+                    src="https://acdn.mitiendanube.com/stores/001/705/915/products/buzo-con-pregunta-en-palabras1-f6ce24eba3378b9db116883282838709-640-0.webp"
                     alt=""
                   />
                 </Link>
@@ -94,8 +94,8 @@ export default function Servicios() {
                   className="block aspect-w-4 aspect-h-3"
                 >
                   <img
-                    className="object-cover w-full h-full"
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-2.jpg"
+                    className="object-cover w-full h-full max-h-[250px]"
+                    src="https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp"
                     alt=""
                   />
                 </Link>
