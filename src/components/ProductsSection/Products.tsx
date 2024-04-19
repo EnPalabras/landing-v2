@@ -190,10 +190,11 @@ export default function Products() {
                 Colección Emocional{' '}
               </p>
               <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
-                ex soluta voluptatibus earum? Commodi velit culpa eaque
-                necessitatibus quidem exercitationem porro nisi deleniti. Iusto,
-                aliquam et! Ullam doloremque hic ratione.
+                La colección emocional es una invitación a conectar con tus
+                emociones más profundas. Cada prenda es una invitación al juego.
+                Son prendas para personas dispuestas a buscar nuevas respuestas.
+                Remeras, Buzos y Tote Bags con consignas que llaman a la
+                reflexión.
                 <br />
                 <br />
               </p>
@@ -252,13 +253,13 @@ export default function Products() {
                       ↔ Desliza para ver más imágenes ↔{' '}
                     </span>
                     <p className="h-full justify-between text-gray-700 my-5 text-justify text-sm">
-                      El <b>Journal de En Palabras</b> es una guía para dialogar
-                      sinceramente contigo mismo. Incluye preguntas diarias y
-                      dinámicas sobre temas cotidianos para ayudarte a salir del
-                      "modo automático" y embarcarte en un viaje de
-                      autoconocimiento profundo.
+                      La colección emocional es una invitación a conectar con
+                      tus emociones más profundas. Cada prenda es una invitación
+                      al juego. Son prendas para personas dispuestas a buscar
+                      nuevas respuestas. Remeras, Buzos y Tote Bags con
+                      consignas que llaman a la reflexión.
                       <span className="mt-4 block text-gray-700 text-sm font-normal">
-                        La propuesta es simple. <b>Parar. Escribir. Repetir.</b>
+                        Consulta nuestra guía de talles
                       </span>
                     </p>
                     <div className="text-gray-700 text-sm font-normal w-full">
@@ -268,13 +269,13 @@ export default function Products() {
                       </p>
                       <ul className="flex flex-col justify-center gap-2">
                         <li>
-                          <b>Tamaño:</b> 13,40cm x 21,80cm
+                          <b>Buzos</b>{' '}
                         </li>
                         <li>
-                          <b>Cantidad de hojas:</b> 128
+                          <b>Remeras</b>
                         </li>{' '}
                         <li>
-                          <b>Duración:</b> 6 meses
+                          <b>Tote Bag</b>
                         </li>{' '}
                       </ul>
                     </div>
