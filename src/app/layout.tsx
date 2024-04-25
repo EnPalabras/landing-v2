@@ -1,4 +1,7 @@
 import type { Metadata } from 'next'
+import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleTagManager } from '@next/third-parties/google'
+
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header/Header'
@@ -50,6 +53,7 @@ export default function RootLayout({
         <Toaster />
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-FZYCR4YBVC" />
     </html>
   )
 }
