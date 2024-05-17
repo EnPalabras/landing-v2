@@ -39,6 +39,8 @@ export const metadata: Metadata = {
   },
 }
 
+// Podríamos agregar un evento en la sección de productos para ver si hacen click ahí
+
 export default function RootLayout({
   children,
 }: Readonly<{

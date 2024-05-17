@@ -3,6 +3,7 @@
 import Nespresso from '@/../public/assets/contenido/Nespresso.jpg'
 import HBO from '@/../public/assets/contenido/Kit HBO.jpeg'
 import TN from '@/../public/assets/contenido/Tienda Nube.jpg'
+import destapados from '@/../public/assets/destapados.jpg'
 
 import { useState } from 'react'
 import {
@@ -43,8 +44,9 @@ export default function Products() {
           <div className="p-5 ">
             <div className="relative border-b border-gray-200">
               <img
-                className="object-cover w-full h-full"
-                src="https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp"
+                className=" w-full h-full min-h-[350px]"
+                src={destapados.src}
+                //src="https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp"
                 alt="Destapados Juego de Cartas para Previas"
               />
 
@@ -61,15 +63,15 @@ export default function Products() {
             <div>
               <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
                 {' '}
-                Explorar y Destapar
+                EXPLORÁ Y DESTAPÁ TABÚES
               </span>
               <p className="mt-5 text-2xl font-semibold"> Destapados </p>
               <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
-                Es una invitación a conectar más profundamente con nuestras
-                parejas, relaciones sexuales y afectivas, así como con nuestras
-                amistades. Las cartas actúan como disparadores para desafiar
-                prejuicios y abrirnos a la exploración colectiva de ideas,
-                experiencias y sentimientos.
+                Destapados es un disparador de encuentros festivos e íntimos,
+                corporales y emocionales. Las cartas buscan destapar los
+                estereotipos y prejuicios que se acarrean, invitándonos a
+                sumergirnos libremente en nuestros pensamientos, emociones,
+                preferencias y, si así lo desean, su cuerpo.
               </p>
               <Sheet>
                 <SheetTrigger className="mt-5 text-2xl">
@@ -126,12 +128,12 @@ export default function Products() {
                       ↔ Desliza para ver más imágenes ↔{' '}
                     </span>
                     <p className="flex h-full justify-between text-gray-700 my-5 text-justify text-sm">
-                      Es una invitación a conectar más profundamente con
-                      nuestras parejas, relaciones sexuales y afectivas, así
-                      como con nuestras amistades. Las cartas actúan como
-                      disparadores para desafiar prejuicios y abrirnos a la
-                      exploración colectiva de ideas, experiencias y
-                      sentimientos.
+                      Destapados es un disparador de encuentros festivos e
+                      íntimos, corporales y emocionales. Las cartas buscan
+                      destapar los estereotipos y prejuicios que se acarrean,
+                      invitándonos a sumergirnos libremente en nuestros
+                      pensamientos, emociones, preferencias y, si así lo desean,
+                      su cuerpo.
                     </p>
                     <div className="text-gray-700 text-sm font-normal w-full">
                       <p className="mb-4">
@@ -176,25 +178,25 @@ export default function Products() {
                   text-gray-900 uppercase bg-gray-100 rounded-full"
                 >
                   {' '}
-                  Coleccion{' '}
+                  Cápsula de ropa{' '}
                 </span>
               </div>
             </div>
             <div>
               <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
                 {' '}
-                Conecta con vos mismo{' '}
+                Vestí lo que querés decir{' '}
               </span>
               <p className="mt-5 text-2xl font-semibold">
                 {' '}
                 Colección Emocional{' '}
               </p>
               <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
-                La colección emocional es una invitación a conectar con tus
-                emociones más profundas. Cada prenda es una invitación al juego.
-                Son prendas para personas dispuestas a buscar nuevas respuestas.
-                Remeras, Buzos y Tote Bags con consignas que llaman a la
-                reflexión.
+                Colección emocional te propone vestir las preguntas que
+                querés que el mundo se haga. Cada prenda es una invitación al
+                juego y conexión con quien te cruces. Son modelos oversize y sin
+                género.
+                <br />
                 <br />
                 <br />
               </p>
@@ -224,21 +226,21 @@ export default function Products() {
                           <CarouselItem>
                             <img
                               src="https://acdn.mitiendanube.com/stores/001/705/915/products/buzo-para-amigos-en-palabras-desconectados1-636cacc042fe3603be16883287516998-640-0.webp"
-                              className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
+                              className="object-scale-down mx-auto w-full h-64 md:w-64  rounded-lg"
                               alt="Buzo y Colección Emocional"
                             />
                           </CarouselItem>
                           <CarouselItem>
                             <img
                               src="https://acdn.mitiendanube.com/stores/001/705/915/products/buzo-con-pregunta-en-palabras1-f6ce24eba3378b9db116883282838709-640-0.webp"
-                              className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
+                              className="object-scale-down mx-auto w-full h-64 md:w-64  rounded-lg"
                               alt="Buzo y Colección Emocional"
                             />
                           </CarouselItem>{' '}
                           <CarouselItem>
                             <img
                               src="https://acdn.mitiendanube.com/stores/001/705/915/products/remera-club-para-amigos1-c6e15f574ea1f1714b16883291081752-640-0.webp"
-                              className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
+                              className="object-scale-down mx-auto w-full h-64 md:w-64  rounded-lg"
                               alt="Buzo y Colección Emocional"
                             />
                           </CarouselItem>{' '}
@@ -253,30 +255,41 @@ export default function Products() {
                       ↔ Desliza para ver más imágenes ↔{' '}
                     </span>
                     <p className="h-full justify-between text-gray-700 my-5 text-justify text-sm">
-                      La colección emocional es una invitación a conectar con
-                      tus emociones más profundas. Cada prenda es una invitación
-                      al juego. Son prendas para personas dispuestas a buscar
-                      nuevas respuestas. Remeras, Buzos y Tote Bags con
-                      consignas que llaman a la reflexión.
+                      Colección emocional te propone vestir las preguntas que
+                      querés que el mundo se haga. Cada prenda es una invitación
+                      al juego y conexión con quien te cruces. Son modelos
+                      oversize y sin género.
                       <span className="mt-4 block text-gray-700 text-sm font-normal">
                         Consulta nuestra guía de talles
                       </span>
                     </p>
                     <div className="text-gray-700 text-sm font-normal w-full">
-                      <p className="mb-4">
-                        El journal viene en dos opciones según lo que te parezca
-                        más cómodo: <b>con anillado y sin anillado.</b>
-                      </p>
                       <ul className="flex flex-col justify-center gap-2">
                         <li>
-                          <b>Buzos</b>{' '}
+                          <b>Remera "Atenta"</b>: prenda para personas que
+                          escapan a las imposiciones del entorno.
                         </li>
                         <li>
-                          <b>Remeras</b>
-                        </li>{' '}
+                          <b>Remera "Preguntame"</b>: prenda para personas que
+                          están dispuestas a buscar nuevas respuestas.
+                        </li>
                         <li>
-                          <b>Tote Bag</b>
-                        </li>{' '}
+                          <b>Remera "Club"</b>: prenda para conocer a personas
+                          con las que podés expresarte.
+                        </li>
+                        <li>
+                          <b>Buzo "Un sueño"</b>: prenda para personas con
+                          interés en conocer la profundidad del mundo.
+                        </li>
+                        <li>
+                          <b>Buzo "Tu señal"</b>: prenda para personas
+                          permeables a descifrar los mensajes del Universo.
+                        </li>
+                        <li>
+                          <b>Tote Bag "Emocional"</b>: prenda para personas con
+                          carácter, decisión y, sobre todo, mucho respeto
+                          propio.
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -308,14 +321,17 @@ export default function Products() {
             <div>
               <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
                 {' '}
-                Personaliza tu Experiencia{' '}
+                Personalizá tu Juego{' '}
               </span>
-              <p className="mt-5 text-2xl font-semibold"> Personalizados </p>
+              <p className="mt-5 text-2xl font-semibold">
+                {' '}
+                Cartas Personalizadas{' '}
+              </p>
               <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
                 Te invitamos a crear cartas con preguntas personalizadas sobre
-                la cultura o experiencia de tu marca. Las mismas deben ser
-                creadas por tu equipo y nosotras las adaptamos a un tono
-                amigable y profundo de En Palabras.
+                la cultura o experiencia de tu marca. Nos compartís tu idea y el
+                equipo de En palabras la transforma una charla amigable y
+                profunda.
                 <br />
                 <br />
                 <br />
@@ -376,9 +392,9 @@ export default function Products() {
                     </span>
                     <p className="h-full justify-between text-gray-700 my-5 text-justify text-sm">
                       Te invitamos a crear cartas con preguntas personalizadas
-                      sobre la cultura o experiencia de tu marca. Las mismas
-                      deben ser creadas por tu equipo y nosotras las adaptamos a
-                      un tono amigable y profundo de En Palabras.
+                      sobre la cultura o experiencia de tu marca. Nos compartís
+                      tu idea y el equipo de En palabras la transforma una
+                      charla amigable y profunda.
                     </p>
                     <p className="h-full justify-between text-gray-700 my-5 text-justify text-sm">
                       Además, podés agregar el logo de tu empresa en la bolsa
@@ -459,7 +475,7 @@ export default function Products() {
               <div>
                 <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
                   {' '}
-                  Juga y Conecta{' '}
+                  Jugá y Conectá{' '}
                 </span>
                 <p className="mt-5 text-2xl font-semibold"> Desconectados </p>
                 <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
@@ -580,15 +596,16 @@ export default function Products() {
               <div>
                 <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
                   {' '}
-                  Conecta con vos mismo{' '}
+                  Conectá con vos mismo{' '}
                 </span>
                 <p className="mt-5 text-2xl font-semibold"> Journal </p>
                 <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
-                  El <b>Journal de En Palabras</b> es una guía para dialogar
-                  sinceramente contigo mismo. Incluye preguntas diarias y
-                  dinámicas sobre temas cotidianos para ayudarte a salir del
-                  <i>"modo automático"</i> y embarcarte en un viaje de
-                  autoconocimiento profundo.
+                  Es un diario personal que te invita a dialogar sinceramente
+                  con vos mismo. Incluye preguntas diarias y dinámicas para
+                  ayudarte a salir del <i>"modo automático"</i> y embarcarte en
+                  un viaje de autoconocimiento profundo.
+                  <br />
+                  <br />
                 </p>
                 <Sheet>
                   <SheetTrigger className="mt-5 text-2xl">
@@ -645,11 +662,12 @@ export default function Products() {
                         ↔ Desliza para ver más imágenes ↔{' '}
                       </span>
                       <p className="h-full justify-between text-gray-700 my-5 text-justify text-sm">
-                        El <b>Journal de En Palabras</b> es una guía para
-                        dialogar sinceramente contigo mismo. Incluye preguntas
-                        diarias y dinámicas sobre temas cotidianos para ayudarte
-                        a salir del "modo automático" y embarcarte en un viaje
-                        de autoconocimiento profundo.
+                        Es un diario personal que te invita a dialogar
+                        sinceramente con vos mismo. Incluye preguntas diarias y
+                        dinámicas para ayudarte a salir del{' '}
+                        <i>"modo automático"</i> y embarcarte en un viaje de
+                        autoconocimiento profundo.
+                        <br />
                         <span className="mt-4 block text-gray-700 text-sm font-normal">
                           La propuesta es simple.{' '}
                           <b>Parar. Escribir. Repetir.</b>
@@ -702,17 +720,17 @@ export default function Products() {
               <div>
                 <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
                   {' '}
-                  Reflexiones{' '}
+                  Hacé tu balance{' '}
                 </span>
                 <p className="mt-5 text-2xl font-semibold">
                   {' '}
                   Edición Año Nuevo{' '}
                 </p>
                 <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
-                  Es una invitación a reflexionar sobre el año pasado para
-                  recibir el nuevo con mayor conciencia. Las cartas sirven como
-                  disparadores para revisar lo vivido, cerrar etapas y conectar
-                  con los deseos y objetivos para el próximo ciclo.
+                  Es una invitación a reflexionar sobre el año que pasó para
+                  recibir el nuevo con mayor conciencia. Las cartas funcionan
+                  como disparadores para revisar lo vivido, cerrar etapas y
+                  conectar con los deseos y objetivos para el próximo ciclo.
                 </p>
                 <Sheet>
                   <SheetTrigger className="mt-5 text-2xl">
@@ -769,11 +787,11 @@ export default function Products() {
                         ↔ Desliza para ver más imágenes ↔{' '}
                       </span>
                       <p className="h-full justify-between text-gray-700 my-5 text-justify text-sm">
-                        Es una invitación a reflexionar sobre el año pasado para
-                        recibir el nuevo con mayor conciencia. Las cartas sirven
-                        como disparadores para revisar lo vivido, cerrar etapas
-                        y conectar con los deseos y objetivos para el próximo
-                        ciclo.
+                        Es una invitación a reflexionar sobre el año que pasó
+                        para recibir el nuevo con mayor conciencia. Las cartas
+                        funcionan como disparadores para revisar lo vivido,
+                        cerrar etapas y conectar con los deseos y objetivos para
+                        el próximo ciclo.
                       </p>
                       <div className="text-gray-700 text-sm font-normal w-full">
                         <p className="mb-4">Son 50 cartas con dos secciones:</p>

@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import ruletaimg from '../../../public/assets/ruleta.JPG'
+import instagramimg from '../../../public/assets/igimg.JPG'
+import capsula from '../../../public/assets/capsula.jpg'
 
 export default function Servicios() {
   return (
@@ -30,8 +33,9 @@ export default function Servicios() {
                   className="block aspect-w-4 aspect-h-3"
                 >
                   <img
-                    className="object-cover w-full h-full max-h-[250px] "
-                    src="https://acdn.mitiendanube.com/stores/001/705/915/products/buzo-con-pregunta-en-palabras1-f6ce24eba3378b9db116883282838709-640-0.webp"
+                    className="object-cover  w-full h-full max-h-[230px] "
+                    src={capsula.src}
+                    //src="https://acdn.mitiendanube.com/stores/001/705/915/products/buzo-con-pregunta-en-palabras1-f6ce24eba3378b9db116883282838709-640-0.webp"
                     alt=""
                   />
                 </Link>
@@ -46,7 +50,7 @@ export default function Servicios() {
               <div>
                 <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
                   {' '}
-                  Palabras del mañana
+                  Conectá con tu yo del futuro
                 </span>
                 <p className="mt-5 text-2xl font-semibold">
                   <Link
@@ -59,8 +63,8 @@ export default function Servicios() {
                   </Link>
                 </p>
                 <p className="mt-4 text-base text-gray-600">
-                  Programa un mensaje para vos mismo/a en el futuro, y recibilo
-                  en el momento que elijas.
+                  Escribile un mensaje a tu yo del futuro y programalo para
+                  recibilo en el momento que quieras leerlo.
                 </p>
                 <Link
                   href="https://www.enpalabras.com.ar/capsula-del-tiempo/"
@@ -94,8 +98,9 @@ export default function Servicios() {
                   className="block aspect-w-4 aspect-h-3"
                 >
                   <img
-                    className="object-cover w-full h-full max-h-[250px]"
-                    src="https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp"
+                    className="object-cover w-full h-full"
+                    src={ruletaimg.src}
+                    //src="https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp"
                     alt=""
                   />
                 </Link>
@@ -109,7 +114,7 @@ export default function Servicios() {
               </div>
               <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
                 {' '}
-                Juga y Conecta{' '}
+                Juga con tu equipo{' '}
               </span>
               <p className="mt-5 text-2xl font-semibold">
                 <Link
@@ -122,8 +127,8 @@ export default function Servicios() {
                 </Link>
               </p>
               <p className="mt-4 text-base text-gray-600">
-                Proba nuestra ruleta de preguntas junto a tu equipo y descubrí
-                nuevas formas de conectar.
+                Animate romper el hielo en tus reuniones con nuestra ruleta de
+                preguntas y descubrí nuevas formas de conectar.
               </p>
               <Link
                 href="https://www.enpalabrasjuegos.com.ar/"
@@ -153,7 +158,8 @@ export default function Servicios() {
                 <a href="#" title="" className="block aspect-w-4 aspect-h-3">
                   <img
                     className="object-cover w-full h-full"
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-3.jpg"
+                    src={instagramimg.src}
+                    // src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-3.jpg"
                     alt=""
                   />
                 </a>
@@ -167,7 +173,7 @@ export default function Servicios() {
               </div>
               <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
                 {' '}
-                Conocenos{' '}
+                Conectá con En Palabras{' '}
               </span>
               <p className="mt-5 text-2xl font-semibold">
                 <a href="#" title="" className="text-black">
@@ -176,8 +182,10 @@ export default function Servicios() {
                 </a>
               </p>
               <p className="mt-4 text-base text-gray-600">
-                Enterate de todas las novedades y eventos que tenemos preparados
-                para vos.
+                Conocé todas las novedades, beneficios y experiencias que
+                creamos para vos.
+                <br />
+                <br />
               </p>
               <Link
                 href="https://www.instagram.com/enpalabrass"
