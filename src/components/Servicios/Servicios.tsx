@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import ruletaimg from '../../../public/assets/ruleta.JPG'
-import instagramimg from '../../../public/assets/igimg.JPG'
+import ruletaimg from '../../../public/assets/ruleta.jpg'
+import instagramimg from '../../../public/assets/igimg.jpg'
 import capsula from '../../../public/assets/capsula.jpg'
 
 export default function Servicios() {
