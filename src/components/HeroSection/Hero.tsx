@@ -38,7 +38,7 @@ export default function HeroSectionImageWithReviews() {
                 <span className="text-purple-800">No </span> somos un regalo
                 corporativo
               </h1>
-              <p className="mt-4 text-lg text-muted-foreground text-center lg:text-start max-w-3xl mx-auto text-balance">
+              <p className="mt-4 text-lg text-center lg:text-start max-w-3xl mx-auto text-balance">
                 Somos la conexión que inspira a tu equipo a{' '}
                 <b>forjar relaciones más profundas, genuinas y empáticas</b>.
                 Fomentamos la colaboración y la creatividad a través de nuestras
