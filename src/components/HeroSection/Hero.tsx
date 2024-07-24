@@ -12,7 +12,6 @@ export default function HeroSectionImageWithReviews() {
                 <a
                   href="https://www.enpalabras.com.ar/productos/journal-en-palabras/"
                   className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-6 text-sm text-gray-700 bg-white rounded-full  hover:bg-gray-200"
-                  role="alert"
                 >
                   <span className="text-xs bg-purple-600 rounded-full text-white px-4 py-1.5 mr-3">
                     Nuevo

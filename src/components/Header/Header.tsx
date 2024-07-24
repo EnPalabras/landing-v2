@@ -67,7 +67,7 @@ export default function Header() {
 
               <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
                 <a
-                  href="#nosotros"
+                  href="/#nosotros"
                   title="Nosotros"
                   className="text-base text-black transition-all duration-200 hover:text-opacity-80"
                 >
@@ -75,7 +75,7 @@ export default function Header() {
                   Sobre Nosotros{' '}
                 </a>
                 <a
-                  href="#productos"
+                  href="/#productos"
                   title="Productos"
                   className="text-base text-black transition-all duration-200 hover:text-opacity-80"
                 >
@@ -84,7 +84,7 @@ export default function Header() {
                 </a>
 
                 <a
-                  href="#proceso"
+                  href="/#proceso"
                   title="Proceso"
                   className="text-base text-black transition-all duration-200 hover:text-opacity-80"
                 >
@@ -93,7 +93,7 @@ export default function Header() {
                 </a>
 
                 <a
-                  href="#faqs"
+                  href="/#faqs"
                   title="Preguntas Frecuentes"
                   className="text-base text-black transition-all duration-200 hover:text-opacity-80"
                 >
@@ -103,7 +103,7 @@ export default function Header() {
               </div>
               <div className="space-x-4">
                 <Link
-                  href="#contacto"
+                  href="/#contacto"
                   className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-gray-200 
                  focus:text-black focus:bg-gray-200 font-semibold text-gray-800 bg-gray-100 rounded-full border border-gray-300"
                 >
@@ -216,7 +216,7 @@ export default function Header() {
                   className="group inline-flex h-9 w-full items-center 
                      rounded-md bg-white px-4 py-5 text-base font-medium 
                     transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
-                  href="#nosotros"
+                  href="/#nosotros"
                   onClick={() => setIsTOCOpen(false)}
                 >
                   Sobre Nosotros
@@ -225,7 +225,7 @@ export default function Header() {
                   className="group inline-flex h-9 w-full items-center 
                      rounded-md bg-white px-4 py-5 text-base font-medium 
                     transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
-                  href="#productos"
+                  href="/#productos"
                   onClick={() => setIsTOCOpen(false)}
                 >
                   Productos
@@ -234,7 +234,7 @@ export default function Header() {
                   className="group inline-flex h-9 w-full items-center 
                      rounded-md bg-white px-4 py-5 text-base font-medium 
                     transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
-                  href="#proceso"
+                  href="/#proceso"
                   onClick={() => setIsTOCOpen(false)}
                 >
                   Proceso
@@ -243,7 +243,7 @@ export default function Header() {
                   className="group inline-flex h-9 w-full items-center 
                      rounded-md bg-white px-4 py-5 text-base font-medium 
                     transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
-                  href="#faqs"
+                  href="/#faqs"
                   onClick={() => setIsTOCOpen(false)}
                 >
                   FAQs
