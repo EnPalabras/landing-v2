@@ -107,7 +107,7 @@ const SocialProofBlock = () => {
           </p>
         </div>
         <div
-          className="mx-auto w-full mx-auto mt-8 space-y-8 sm:space-x-4 sm:mt-12 sm:flex sm:items-start sm:justify-center 
+          className="w-full mx-auto mt-8 space-y-8 sm:space-x-4 sm:mt-12 sm:flex sm:items-start sm:justify-center 
         sm:space-y-0 md:space-x-10 lg:mt-20"
         >
           <div className="flex items-start">

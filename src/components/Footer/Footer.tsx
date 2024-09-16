@@ -25,6 +25,7 @@ export default function Footer() {
                 <Link
                   href="https://www.facebook.com/p/En-Palabras-100063708482183/"
                   target="_blank"
+                  title="Facebook En Palabras"
                   className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-10 h-10 focus:bg-purple-600 hover:text-white focus:text-white hover:bg-purple-600 hover:border-purple-600 focus:border-purple-600"
                 >
                   <svg
@@ -42,6 +43,7 @@ export default function Footer() {
                 <Link
                   href="https://www.instagram.com/enpalabrass"
                   target="_blank"
+                  title="Instagram En Palabras"
                   className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-10 h-10 focus:bg-purple-600 hover:text-white focus:text-white hover:bg-purple-600 hover:border-purple-600 focus:border-purple-600"
                 >
                   <svg
@@ -60,6 +62,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://tiktok.com/@enpalabrass"
+                  title="Tik Tok En Palabras"
                   target="_blank"
                   className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-10 h-10 focus:bg-purple-600 hover:text-white focus:text-white hover:bg-purple-600 hover:border-purple-600 focus:border-purple-600"
                 >
@@ -86,6 +89,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://tiktok.com/@enpalabrass"
+                  title="Tik Tok En Palabras"
                   target="_blank"
                   className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-10 h-10 focus:bg-purple-600 hover:text-white focus:text-white hover:bg-purple-600 hover:border-purple-600 focus:border-purple-600"
                 >
@@ -108,6 +112,7 @@ export default function Footer() {
             <div className=" hidden w-full lg:flex justify-center">
               <Link
                 href="https://enpalabras.com.ar"
+                title="Tienda Online"
                 target="_blank"
                 className="inline-flex items-center justify-center px-6 py-4 font-semibold text-white transition-all duration-200 
               bg-purple-600 rounded-md hover:bg-purple-700 focus:bg-purple-700 mt-7"
@@ -125,6 +130,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
+                  title="Inicio"
                   className="flex text-sm text-gray-800 transition-all duration-200 hover:text-purple-600 focus:text-purple-600"
                 >
                   {' '}
@@ -134,6 +140,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#productos"
+                  title="Productos"
                   className="flex text-sm text-gray-800 transition-all duration-200 hover:text-purple-600 focus:text-purple-600"
                 >
                   {' '}

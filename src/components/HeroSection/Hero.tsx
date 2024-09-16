@@ -184,14 +184,16 @@ export default function HeroSectionImageWithReviews() {
               <div className="lg:order-1 pr-12 sm:pr-0 place-self-center">
                 <div className="relative max-w-lg mb-12">
                   <img
-                    fetchPriority="high"
+                    fetchPriority="low"
+                    loading="lazy"
                     className="object-bottom rounded-md"
                     src="https://acdn.mitiendanube.com/stores/001/705/915/products/desconectados-juegos-de-cartas1-58b156f17c45cfd7ea16685177012985-640-0.webp"
                     alt="Juego de Cartas - Desconectados"
                   />
 
                   <img
-                    fetchPriority="high"
+                    fetchPriority="low"
+                    loading="lazy"
                     className="absolute origin-bottom-right scale-90 rounded-md -bottom-20 -right-20"
                     src={epContenido1.src}
                     alt="Juego de Cartas - Desconectados"
