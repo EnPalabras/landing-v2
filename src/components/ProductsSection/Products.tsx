@@ -171,7 +171,7 @@ export default function Products() {
           </div>
         </div>
 
-        <div className="overflow-hidden bg-white rounded shadow">
+        {/* <div className="overflow-hidden bg-white rounded shadow">
           <div className="p-5 ">
             <div className="relative border-b border-gray-200 ">
               <img
@@ -306,6 +306,126 @@ export default function Products() {
                           carácter, decisión y, sobre todo, mucho respeto
                           propio.
                         </li>
+                      </ul>
+                    </div>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
+          </div>
+        </div> */}
+
+        <div className="overflow-hidden bg-white rounded shadow">
+          <div className="p-5 ">
+            <div className="relative border-b border-gray-200">
+              <img
+                loading="lazy"
+                fetchPriority="low"
+                className="object-scale-down "
+                src="https://acdn.mitiendanube.com/stores/001/705/915/products/ano-nuevo-21-f8bd8bdad5b29c1ad216679475830811-640-0.webp"
+                alt="Juego de Cartas Año Nuevo"
+              />
+
+              <div className="absolute top-4 left-4 ">
+                <span
+                  className="px-4 py-2 text-xs font-semibold tracking-widest 
+                  text-gray-900 uppercase bg-gray-100 rounded-full"
+                >
+                  {' '}
+                  Juegos{' '}
+                </span>
+              </div>
+            </div>
+            <div>
+              <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
+                {' '}
+                Hacé tu balance{' '}
+              </span>
+              <p className="mt-5 text-2xl font-semibold"> Edición Año Nuevo </p>
+              <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
+                Es una invitación a reflexionar sobre el año que pasó para
+                recibir el nuevo con mayor conciencia. Las cartas funcionan como
+                disparadores para revisar lo vivido, cerrar etapas y conectar
+                con los deseos y objetivos para el próximo ciclo.
+              </p>
+              <Sheet>
+                <SheetTrigger className="mt-5 text-2xl">
+                  <div className="inline-flex items-center justify-center pb-0.5  text-base font-semibold text-blue-600 transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600">
+                    Conocer más
+                    <svg
+                      className="w-5 h-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </SheetTrigger>
+                <SheetContent>
+                  <SheetHeader>
+                    <SheetTitle>
+                      <Carousel className="object-cover">
+                        <CarouselContent>
+                          <CarouselItem>
+                            <img
+                              loading="lazy"
+                              fetchPriority="low"
+                              src="https://acdn.mitiendanube.com/stores/001/705/915/products/11-6abc5a8f6a44714a8516678314509320-1024-1024.webp"
+                              className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
+                              alt="Juego de Cartas - Año Nuevo"
+                            />
+                          </CarouselItem>
+                          <CarouselItem>
+                            <img
+                              loading="lazy"
+                              fetchPriority="low"
+                              src="https://acdn.mitiendanube.com/stores/001/705/915/products/juego-de-cartas-edicion-ano-nuevo-en-palabrasss1-ae868838e90fff7e7d16680888314539-640-0.webp"
+                              className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
+                              alt="Juego de Cartas - Año Nuevo"
+                            />
+                          </CarouselItem>{' '}
+                          <CarouselItem>
+                            <img
+                              loading="lazy"
+                              fetchPriority="low"
+                              src="https://acdn.mitiendanube.com/stores/001/705/915/products/ano-nuevo-21-f8bd8bdad5b29c1ad216679475830811-640-0.webp"
+                              className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
+                              alt="Juego de Cartas - Año Nuevo"
+                            />
+                          </CarouselItem>{' '}
+                        </CarouselContent>
+                      </Carousel>
+                    </SheetTitle>
+                    <SheetDescription className="bg-yellow"></SheetDescription>
+                  </SheetHeader>
+                  <div className="flex flex-col">
+                    <span className="text-gray-500 text-sm font-normal text-center w-full">
+                      {' '}
+                      ↔ Desliza para ver más imágenes ↔{' '}
+                    </span>
+                    <p className="h-full justify-between text-gray-700 my-5 text-justify text-sm">
+                      Es una invitación a reflexionar sobre el año que pasó para
+                      recibir el nuevo con mayor conciencia. Las cartas
+                      funcionan como disparadores para revisar lo vivido, cerrar
+                      etapas y conectar con los deseos y objetivos para el
+                      próximo ciclo.
+                    </p>
+                    <div className="text-gray-700 text-sm font-normal w-full">
+                      <p className="mb-4">Son 50 cartas con dos secciones:</p>
+                      <ul className="flex flex-col justify-center gap-2">
+                        <li>
+                          <b>💫Retrospección:</b> cartas para registrar cómo te
+                          hacen sentir tus experiencias pasadas
+                        </li>
+                        <li>
+                          <b>✨Proyección: </b> cartas que te guían a alcanzar
+                          lo que te gustaría integrar
+                        </li>{' '}
                       </ul>
                     </div>
                   </div>
@@ -745,8 +865,8 @@ export default function Products() {
                   loading="lazy"
                   fetchPriority="low"
                   className="object-scale-down "
-                  src="https://acdn.mitiendanube.com/stores/001/705/915/products/ano-nuevo-21-f8bd8bdad5b29c1ad216679475830811-640-0.webp"
-                  alt="Juego de Cartas Año Nuevo"
+                  src="https://acdn.mitiendanube.com/stores/001/705/915/products/img_3580-f1782d1433931301bc17195816596939-1024-1024.webp"
+                  alt="Juego de Cartas Descubriendo"
                 />
 
                 <div className="absolute top-4 left-4 ">
@@ -762,17 +882,14 @@ export default function Products() {
               <div>
                 <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
                   {' '}
-                  Hacé tu balance{' '}
+                  Juga con los mas chicos{' '}
                 </span>
-                <p className="mt-5 text-2xl font-semibold">
-                  {' '}
-                  Edición Año Nuevo{' '}
-                </p>
+                <p className="mt-5 text-2xl font-semibold"> Descubriendo </p>
                 <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
-                  Es una invitación a reflexionar sobre el año que pasó para
-                  recibir el nuevo con mayor conciencia. Las cartas funcionan
-                  como disparadores para revisar lo vivido, cerrar etapas y
-                  conectar con los deseos y objetivos para el próximo ciclo.
+                  Conectar con los/as niños/as no siempre es fácil, y la rutina
+                  puede complicar estos momentos. Descubriendo te invita a
+                  compartir preguntas que abren oportunidades para conocerse,
+                  aprender y desarrollar habilidades mientras juegan.
                 </p>
                 <Sheet>
                   <SheetTrigger className="mt-5 text-2xl">
@@ -801,27 +918,27 @@ export default function Products() {
                               <img
                                 loading="lazy"
                                 fetchPriority="low"
-                                src="https://acdn.mitiendanube.com/stores/001/705/915/products/11-6abc5a8f6a44714a8516678314509320-1024-1024.webp"
+                                src="https://acdn.mitiendanube.com/stores/001/705/915/products/img_3580-f1782d1433931301bc17195816596939-1024-1024.webp"
                                 className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
-                                alt="Juego de Cartas - Año Nuevo"
+                                alt="Juego de Cartas Descubriendo"
                               />
                             </CarouselItem>
                             <CarouselItem>
                               <img
                                 loading="lazy"
                                 fetchPriority="low"
-                                src="https://acdn.mitiendanube.com/stores/001/705/915/products/juego-de-cartas-edicion-ano-nuevo-en-palabrasss1-ae868838e90fff7e7d16680888314539-640-0.webp"
+                                src="https://acdn.mitiendanube.com/stores/001/705/915/products/img_3845-b1dbd29de9cc10904817195816780228-640-0.webp"
                                 className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
-                                alt="Juego de Cartas - Año Nuevo"
+                                alt="Juga con los más chicos"
                               />
                             </CarouselItem>{' '}
                             <CarouselItem>
                               <img
                                 loading="lazy"
                                 fetchPriority="low"
-                                src="https://acdn.mitiendanube.com/stores/001/705/915/products/ano-nuevo-21-f8bd8bdad5b29c1ad216679475830811-640-0.webp"
+                                src="https://acdn.mitiendanube.com/stores/001/705/915/products/img_3775-e0dd3e23e6713b803f17195816702543-640-0.webp"
                                 className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
-                                alt="Juego de Cartas - Año Nuevo"
+                                alt="Juego de Cartas - Descubriendo"
                               />
                             </CarouselItem>{' '}
                           </CarouselContent>
@@ -835,23 +952,38 @@ export default function Products() {
                         ↔ Desliza para ver más imágenes ↔{' '}
                       </span>
                       <p className="h-full justify-between text-gray-700 my-5 text-justify text-sm">
-                        Es una invitación a reflexionar sobre el año que pasó
-                        para recibir el nuevo con mayor conciencia. Las cartas
-                        funcionan como disparadores para revisar lo vivido,
-                        cerrar etapas y conectar con los deseos y objetivos para
-                        el próximo ciclo.
+                        Conectar con los/as niños/as no siempre es fácil, y la
+                        rutina puede complicar estos momentos. Descubriendo te
+                        invita a compartir preguntas que abren oportunidades
+                        para conocerse, aprender y desarrollar habilidades
+                        mientras juegan.
                       </p>
                       <div className="text-gray-700 text-sm font-normal w-full">
-                        <p className="mb-4">Son 50 cartas con dos secciones:</p>
+                        <p className="mb-4">
+                          Sus 5 secciones van de lo profundo a la risa y el
+                          movimiento
+                        </p>
                         <ul className="flex flex-col justify-center gap-2">
                           <li>
-                            <b>💫Retrospección:</b> cartas para registrar cómo
-                            te hacen sentir tus experiencias pasadas
+                            <b>💫 Relaciones Mágicas:</b> para pensar los
+                            vínculos.
                           </li>
                           <li>
-                            <b>✨Proyección: </b> cartas que te guían a alcanzar
-                            lo que te gustaría integrar
+                            <b>🌎 Mi Mundo: </b> para conversar sobre cómo
+                            perciben y piensan el mundo.
                           </li>{' '}
+                          <li>
+                            <b>🌊 Mar de Emociones:</b> para navegar en el mundo
+                            emocional.
+                          </li>
+                          <li>
+                            <b>🎁 Caja de Sorpresas: </b> para descubrir
+                            curiosidades y un popurrí de temáticas.
+                          </li>{' '}
+                          <li>
+                            <b>🚀 Misiones Especiales: </b> para descomprimir y
+                            ponerse en movimiento.
+                          </li>
                         </ul>
                       </div>
                     </div>

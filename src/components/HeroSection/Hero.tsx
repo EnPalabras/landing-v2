@@ -10,14 +10,15 @@ export default function HeroSectionImageWithReviews() {
             <div className="flex flex-col">
               <div className="flex justify-center lg:justify-start">
                 <a
-                  href="https://www.enpalabras.com.ar/productos/journal-en-palabras/"
+                  target="_blank"
+                  href="https://www.enpalabras.com.ar/productos/descubriendo-juego-de-cartas-para-ninos/"
                   className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-6 text-sm text-gray-700 bg-white rounded-full  hover:bg-gray-200"
                 >
                   <span className="text-xs bg-purple-600 rounded-full text-white px-4 py-1.5 mr-3">
                     Nuevo
                   </span>
                   <span className="text-sm font-medium">
-                    Conocé nuestro Journal
+                    Juego para Niños y Adultos <b>Descubriendo</b>
                   </span>
                   <svg
                     className="ml-2 w-5 h-5"
@@ -37,7 +38,7 @@ export default function HeroSectionImageWithReviews() {
                 <span className="text-purple-800">No </span> somos un regalo
                 corporativo
               </h1>
-              <p className="mt-4 text-lg text-center lg:text-start max-w-3xl mx-auto text-balance">
+              <p className="mt-4 text-lg text-center lg:text-start max-w-3xl mx-auto">
                 Somos la conexión que inspira a tu equipo a{' '}
                 <b>forjar relaciones más profundas, genuinas y empáticas</b>.
                 Fomentamos la colaboración y la creatividad a través de nuestras
