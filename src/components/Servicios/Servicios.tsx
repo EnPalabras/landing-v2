@@ -33,10 +33,12 @@ export default function Servicios() {
                   className="block aspect-w-4 aspect-h-3"
                 >
                   <img
+                    loading="lazy"
+                    fetchPriority="low"
                     className="object-cover  w-full h-full max-h-[230px] "
                     src={capsula.src}
                     //src="https://acdn.mitiendanube.com/stores/001/705/915/products/buzo-con-pregunta-en-palabras1-f6ce24eba3378b9db116883282838709-640-0.webp"
-                    alt=""
+                    alt="Conecta con tu yo del futuro"
                   />
                 </Link>
 
@@ -98,10 +100,12 @@ export default function Servicios() {
                   className="block aspect-w-4 aspect-h-3"
                 >
                   <img
+                    loading="lazy"
+                    fetchPriority="low"
                     className="object-cover w-full h-full"
                     src={ruletaimg.src}
                     //src="https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp"
-                    alt=""
+                    alt="Usa nuestra ruleta con tus conocidos"
                   />
                 </Link>
 
@@ -157,10 +161,12 @@ export default function Servicios() {
               <div className="relative">
                 <a href="#" title="" className="block aspect-w-4 aspect-h-3">
                   <img
+                    loading="lazy"
+                    fetchPriority="low"
                     className="object-cover w-full h-full"
                     src={instagramimg.src}
                     // src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-3.jpg"
-                    alt=""
+                    alt="Seguinos en instagram"
                   />
                 </a>
 

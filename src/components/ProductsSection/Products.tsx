@@ -45,6 +45,8 @@ export default function Products() {
             <div className="relative border-b border-gray-200">
               <img
                 className=" w-full h-full min-h-[350px]"
+                loading="lazy"
+                fetchPriority="low"
                 src={destapados.src}
                 //src="https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp"
                 alt="Destapados Juego de Cartas para Previas"
@@ -98,6 +100,8 @@ export default function Products() {
                         <CarouselContent>
                           <CarouselItem>
                             <img
+                              loading="lazy"
+                              fetchPriority="low"
                               src="https://acdn.mitiendanube.com/stores/001/705/915/products/juego-para-amigos-y-pareja1-04a8074a73b8e6859b16728612235787-1024-1024.webp"
                               className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                               alt="Destapados Juego de Cartas para Previas"
@@ -105,6 +109,8 @@ export default function Products() {
                           </CarouselItem>
                           <CarouselItem>
                             <img
+                              loading="lazy"
+                              fetchPriority="low"
                               src="https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp"
                               className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                               alt="Destapados Juego de Cartas para Previas"
@@ -112,6 +118,8 @@ export default function Products() {
                           </CarouselItem>{' '}
                           <CarouselItem>
                             <img
+                              loading="lazy"
+                              fetchPriority="low"
                               src="https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-en-pareja1-7c065a974fe2fe441e16685193060239-640-0.webp"
                               className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                               alt="Destapados Juego de Cartas para Previas"
@@ -167,6 +175,8 @@ export default function Products() {
           <div className="p-5 ">
             <div className="relative border-b border-gray-200 ">
               <img
+                loading="lazy"
+                fetchPriority="low"
                 className="object-cover w-full h-full overflow-hidden max-h-[350px]"
                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/buzo-con-pregunta-en-palabras1-f6ce24eba3378b9db116883282838709-640-0.webp"
                 alt="Buzo y Colección Emocional"
@@ -225,6 +235,8 @@ export default function Products() {
                         <CarouselContent>
                           <CarouselItem>
                             <img
+                              loading="lazy"
+                              fetchPriority="low"
                               src="https://acdn.mitiendanube.com/stores/001/705/915/products/buzo-para-amigos-en-palabras-desconectados1-636cacc042fe3603be16883287516998-640-0.webp"
                               className="object-scale-down mx-auto w-full h-64 md:w-64  rounded-lg"
                               alt="Buzo y Colección Emocional"
@@ -232,6 +244,8 @@ export default function Products() {
                           </CarouselItem>
                           <CarouselItem>
                             <img
+                              loading="lazy"
+                              fetchPriority="low"
                               src="https://acdn.mitiendanube.com/stores/001/705/915/products/buzo-con-pregunta-en-palabras1-f6ce24eba3378b9db116883282838709-640-0.webp"
                               className="object-scale-down mx-auto w-full h-64 md:w-64  rounded-lg"
                               alt="Buzo y Colección Emocional"
@@ -239,6 +253,8 @@ export default function Products() {
                           </CarouselItem>{' '}
                           <CarouselItem>
                             <img
+                              loading="lazy"
+                              fetchPriority="low"
                               src="https://acdn.mitiendanube.com/stores/001/705/915/products/remera-club-para-amigos1-c6e15f574ea1f1714b16883291081752-640-0.webp"
                               className="object-scale-down mx-auto w-full h-64 md:w-64  rounded-lg"
                               alt="Buzo y Colección Emocional"
@@ -303,6 +319,8 @@ export default function Products() {
           <div className="p-5 ">
             <div className="relative border-b border-gray-200">
               <img
+                loading="lazy"
+                fetchPriority="low"
                 className="object-scale-down max-w-full max-h-[360px]"
                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/desconectados-regalo-empresas1-57ebcbfc96842f074916685182180725-640-0.webp"
                 alt="Desconectados para empresas"
@@ -361,6 +379,8 @@ export default function Products() {
                         <CarouselContent>
                           <CarouselItem>
                             <img
+                              loading="lazy"
+                              fetchPriority="low"
                               src={TN.src}
                               className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                               alt='Juego de Cartas "Desconectados" para empresas'
@@ -368,6 +388,8 @@ export default function Products() {
                           </CarouselItem>{' '}
                           <CarouselItem>
                             <img
+                              loading="lazy"
+                              fetchPriority="low"
                               src={HBO.src}
                               className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                               alt='Juego de Cartas "Desconectados" para empresas'
@@ -375,6 +397,8 @@ export default function Products() {
                           </CarouselItem>
                           <CarouselItem>
                             <img
+                              loading="lazy"
+                              fetchPriority="low"
                               src={Nespresso.src}
                               className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                               alt='Juego de Cartas "Desconectados" para empresas'
@@ -457,6 +481,8 @@ export default function Products() {
             <div className="p-5 ">
               <div className="relative border-b border-gray-200">
                 <img
+                  loading="lazy"
+                  fetchPriority="low"
                   className="object-cover w-full h-full"
                   src="https://acdn.mitiendanube.com/stores/001/705/915/products/desconectados-juegos-de-cartas1-58b156f17c45cfd7ea16685177012985-640-0.webp"
                   alt="Juego de Cartas Desconectados"
@@ -509,6 +535,8 @@ export default function Products() {
                           <CarouselContent>
                             <CarouselItem>
                               <img
+                                loading="lazy"
+                                fetchPriority="low"
                                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/juego-para-familias1-e967b8ecf1aad2e0bf16728584939231-1024-1024.webp"
                                 className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                                 alt="Juego de Cartas Desconectados"
@@ -516,6 +544,8 @@ export default function Products() {
                             </CarouselItem>
                             <CarouselItem>
                               <img
+                                loading="lazy"
+                                fetchPriority="low"
                                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/desconectados-juegos-de-cartas1-58b156f17c45cfd7ea16685177012985-640-0.webp"
                                 className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                                 alt="Juego de Cartas Desconectados"
@@ -523,6 +553,8 @@ export default function Products() {
                             </CarouselItem>{' '}
                             <CarouselItem>
                               <img
+                                loading="lazy"
+                                fetchPriority="low"
                                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/desconectados-juegos-de-cartass1-54e335af8b41c049a016685182177994-640-0.webp"
                                 className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                                 alt="Juego de Cartas Desconectados"
@@ -578,6 +610,8 @@ export default function Products() {
             <div className="p-5 ">
               <div className="relative border-b border-gray-200">
                 <img
+                  loading="lazy"
+                  fetchPriority="low"
                   className="object-scale-down "
                   src="https://acdn.mitiendanube.com/stores/001/705/915/products/journal-3_-c6e7033b0fcbc780b017012740186645-640-0.webp"
                   alt="Journal de En Palabras"
@@ -632,6 +666,8 @@ export default function Products() {
                           <CarouselContent>
                             <CarouselItem>
                               <img
+                                loading="lazy"
+                                fetchPriority="low"
                                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/journal-producto-tienda-nube-2-040717723ae880509417012739213304-640-0.webp"
                                 className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                                 alt="Journal de En Palabras"
@@ -639,6 +675,8 @@ export default function Products() {
                             </CarouselItem>
                             <CarouselItem>
                               <img
+                                loading="lazy"
+                                fetchPriority="low"
                                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/preguntas-diarias-18-53fb7544194d6b56c317014369171282-640-0.webp"
                                 className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                                 alt="Journal de En Palabras"
@@ -646,6 +684,8 @@ export default function Products() {
                             </CarouselItem>{' '}
                             <CarouselItem>
                               <img
+                                loading="lazy"
+                                fetchPriority="low"
                                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/journal-3_-c6e7033b0fcbc780b017012740186645-640-0.webp"
                                 className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                                 alt="Journal de En Palabras"
@@ -702,6 +742,8 @@ export default function Products() {
             <div className="p-5 ">
               <div className="relative border-b border-gray-200">
                 <img
+                  loading="lazy"
+                  fetchPriority="low"
                   className="object-scale-down "
                   src="https://acdn.mitiendanube.com/stores/001/705/915/products/ano-nuevo-21-f8bd8bdad5b29c1ad216679475830811-640-0.webp"
                   alt="Juego de Cartas Año Nuevo"
@@ -757,6 +799,8 @@ export default function Products() {
                           <CarouselContent>
                             <CarouselItem>
                               <img
+                                loading="lazy"
+                                fetchPriority="low"
                                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/11-6abc5a8f6a44714a8516678314509320-1024-1024.webp"
                                 className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                                 alt="Juego de Cartas - Año Nuevo"
@@ -764,6 +808,8 @@ export default function Products() {
                             </CarouselItem>
                             <CarouselItem>
                               <img
+                                loading="lazy"
+                                fetchPriority="low"
                                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/juego-de-cartas-edicion-ano-nuevo-en-palabrasss1-ae868838e90fff7e7d16680888314539-640-0.webp"
                                 className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                                 alt="Juego de Cartas - Año Nuevo"
@@ -771,6 +817,8 @@ export default function Products() {
                             </CarouselItem>{' '}
                             <CarouselItem>
                               <img
+                                loading="lazy"
+                                fetchPriority="low"
                                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/ano-nuevo-21-f8bd8bdad5b29c1ad216679475830811-640-0.webp"
                                 className="object-scale-down mx-auto w-full h-64 md:w-64 md:h-full rounded-lg"
                                 alt="Juego de Cartas - Año Nuevo"

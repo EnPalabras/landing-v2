@@ -27,12 +27,16 @@ export default function SocialProof() {
           <div className="lg:order-1 pr-12 sm:pr-0 place-self-center">
             <div className="relative max-w-sm mb-12">
               <img
+                loading="lazy"
+                fetchPriority="low"
                 className="object-bottom rounded-md"
                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/desconectados-juego-de-cartas-familiar1-67680530ca8c8f5ef616685182185530-640-0.webp"
                 alt="Imagen de familias jugando Desconectados"
               />
 
               <img
+                loading="lazy"
+                fetchPriority="low"
                 className="absolute origin-bottom-right scale-90 rounded-md -bottom-20 -right-10"
                 src="https://acdn.mitiendanube.com/stores/001/705/915/products/desconectados-regalo-empresas1-57ebcbfc96842f074916685182180725-640-0.webp"
                 alt="Imagen de una empresa jugando Desconectados como regalo"

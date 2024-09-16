@@ -22,9 +22,11 @@ export default function Testimonials() {
             <div className="h-full flex flex-col justify-between">
               <div className="relative w-24 h-24 mx-auto -translate-y-10">
                 <img
+                  loading="lazy"
+                  fetchPriority="low"
                   className="relative object-cover w-24 h-24 mx-auto rounded-full bg-white"
                   src={coraBlue.src}
-                  alt=""
+                  alt="logo de Cora Blue"
                 />
                 <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
                   <svg
@@ -99,9 +101,11 @@ export default function Testimonials() {
             <div className="h-full flex flex-col justify-between">
               <div className="relative w-24 h-24 mx-auto -translate-y-10">
                 <img
+                  loading="lazy"
+                  fetchPriority="low"
                   className="relative object-cover w-24 h-24 mx-auto rounded-full bg-white"
                   src={google.src}
-                  alt=""
+                  alt="logo de Google"
                 />
                 <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
                   <svg
@@ -182,9 +186,11 @@ export default function Testimonials() {
             <div className="h-full flex flex-col justify-between">
               <div className="relative w-24 h-24 mx-auto -translate-y-10">
                 <img
+                  loading="lazy"
+                  fetchPriority="low"
                   className="relative object-cover w-24 h-24 mx-auto rounded-full bg-black invert"
                   src={sig.src}
-                  alt=""
+                  alt="logo de SIG"
                 />
                 <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
                   <svg

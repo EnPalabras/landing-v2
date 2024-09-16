@@ -7,7 +7,13 @@ export default function Footer() {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-y-12 gap-x-8 xl:gap-x-12 justify-end">
           <div className="col-span-2 md:col-span-4 xl:pr-8">
-            <img className="w-auto h-12 mx-auto" src={logoEP.src} alt="" />
+            <img
+              className="w-auto h-12 mx-auto"
+              src={logoEP.src}
+              alt=""
+              loading="lazy"
+              fetchPriority="low"
+            />
 
             <p className="text-base leading-relaxed text-gray-600 mt-7 text-center">
               Conocé más sobre nosotros y nuestros productos en nuestro sitio
