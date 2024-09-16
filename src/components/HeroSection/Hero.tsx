@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import epContenido1 from '@/../public/assets/contenido/epContenido1.webp'
 
