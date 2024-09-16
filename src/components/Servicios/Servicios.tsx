@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import ruletaimg from '@/../public/assets/ruletaimg.jpg'
-import instagramimg from '@/../public/assets/instagram.jpg'
-import capsula from '@/../public/assets/capsulaimg.jpg'
+import instagramimg from '@/../public/assets/instagram.webp'
+import capsula from '@/../public/assets/capsulaimg.webp'
 
 export default function Servicios() {
   return (

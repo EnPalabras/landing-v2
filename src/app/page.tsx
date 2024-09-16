@@ -7,6 +7,7 @@ import Products from '@/components/ProductsSection/Products'
 import Servicios from '@/components/Servicios/Servicios'
 import SocialProof from '@/components/SocialProof/SocialProof'
 import Testimonials from '@/components/Testimonials/Testimonials'
+import { revalidatePath } from 'next/cache'
 
 const questions = [
   {

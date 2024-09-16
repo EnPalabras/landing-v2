@@ -1,8 +1,8 @@
 'use client'
 
-import Nespresso from '@/../public/assets/contenido/Nespresso.jpg'
-import HBO from '@/../public/assets/contenido/Kit HBO.jpeg'
-import TN from '@/../public/assets/contenido/Tienda Nube.jpg'
+import Nespresso from '@/../public/assets/contenido/Nespresso.webp'
+import HBO from '@/../public/assets/contenido/Kit-HBO.webp'
+import TN from '@/../public/assets/contenido/Tienda-Nube.webp'
 import destapados from '@/../public/assets/destapados.jpg'
 
 import { useState } from 'react'
