@@ -1,12 +1,16 @@
 import Brands from '@/components/Brands/Brands'
 import Contact from '@/components/Contact/Contact'
+import AboutSection from '@/components/Contact/QuienesSomos'
 import FAQs from '@/components/FAQs/FAQ'
+import Features from '@/components/Features/Features'
 import HeroSectionImageWithReviews from '@/components/HeroSection/Hero'
 import { Path } from '@/components/Path/Path'
 import Products from '@/components/ProductsSection/Products'
 import Servicios from '@/components/Servicios/Servicios'
 import SocialProof from '@/components/SocialProof/SocialProof'
 import Testimonials from '@/components/Testimonials/Testimonials'
+import TeamSection from '@/NextLevel/NextLevel'
+import Resources from '@/Resources/Resources'
 import { revalidatePath } from 'next/cache'
 
 const questions = [
@@ -39,19 +43,21 @@ const questions = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    // <main className="flex min-h-screen flex-col items-center w-full">
+    <main className="flex flex-col items-center w-full">
       <HeroSectionImageWithReviews />
+      <Resources />
+      {/* <SocialProof /> */}
+      {/* <Brands /> */}
+      {/* <Path /> */}
       <Products />
-
-      <SocialProof />
-      <Brands />
-
-      <Path />
       <Testimonials />
-      <Servicios />
-
-      <FAQs questions={questions} />
-      <Contact />
+      <Features />
+      <TeamSection />
+      <AboutSection />
+      {/* <Servicios /> */}
+      {/* <FAQs questions={questions} /> */}
+      {/* <Contact /> */}
     </main>
   )
 }

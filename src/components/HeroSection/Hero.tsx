@@ -6,7 +6,7 @@ import epContenido1 from '@/../public/assets/contenido/epContenido1.webp'
 export default function HeroSectionImageWithReviews() {
   return (
     <>
-      <section id="hero-section" className="w-full bg-zinc-100">
+      <section id="hero-section" className="w-full bg-[#E9DBF7]">
         <div className="container py-16 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
             <div className="flex flex-col">

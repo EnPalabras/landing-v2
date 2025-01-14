@@ -52,7 +52,7 @@ export default function RootLayout({
 
         {children}
         <Toaster />
-        <Footer />
+        {/* <Footer /> */}
       </body>
       <GoogleAnalytics gaId="G-FZYCR4YBVC" />
       <GoogleTagManager gtmId="GTM-WBMVQW86" />

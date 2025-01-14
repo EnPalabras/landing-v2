@@ -20,8 +20,8 @@ export default function Header() {
 
   return (
     <>
-      <div className="mx-auto hidden lg:block border-b border-gray-200 bg-white w-full">
-        <header className="bg-[#FCF8F1] bg-opacity-30">
+      <div className="mx-auto hidden lg:block bg-[#E9DBF7] w-full">
+        <header className="">
           <div className="px-4 mx-auto sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16 lg:h-20">
               <div className="flex-shrink-0">
@@ -104,8 +104,8 @@ export default function Header() {
               <div className="space-x-4">
                 <Link
                   href="/#contacto"
-                  className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-gray-200 
-                 focus:text-black focus:bg-gray-200 font-semibold text-gray-800 bg-gray-100 rounded-full border border-gray-300"
+                  className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 
+                 font-semibold text-gray-800 bg-gray-800 rounded-full border bg-opacity-10 hover:bg-opacity-20 border-gray-400"
                 >
                   {' '}
                   Contacto{' '}
@@ -124,7 +124,7 @@ export default function Header() {
           </div>
         </header>
       </div>
-      <div className="flex justify-end w-full lg:hidden  md:px-6 bg-white">
+      <div className="flex justify-end w-full lg:hidden md:px-6 bg-white">
         <Sheet open={isTOCOpen}>
           <div className="flex flex-row justify-between w-full items-center bg-white p-4">
             <svg
@@ -180,7 +180,7 @@ export default function Header() {
                   height={120}
                 />
                 <svg
-                  className="w-6 h-6 text-gray-800 dark:text-white cursor-pointer"
+                  className="w-6 h-6 text-gray-800 cursor-pointer"
                   onClick={() => setIsTOCOpen(false)}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"

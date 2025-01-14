@@ -1,6 +1,6 @@
 export default function Brands() {
   return (
-    <section className="py-10 sm:py-16 lg:py-16 bg-gray-100 w-full bg-white">
+    <section className="py-10 sm:py-16 lg:py-16w-full bg-white">
       <div className="p-4 mx-auto max-w-7xl sm:p-6 lg:p-8 ">
         <div className="space-y-3 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-balance">
