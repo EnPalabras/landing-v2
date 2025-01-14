@@ -4,6 +4,7 @@ import AboutSection from '@/components/Contact/QuienesSomos'
 import FAQs from '@/components/FAQs/FAQ'
 import Features from '@/components/Features/Features'
 import HeroSectionImageWithReviews from '@/components/HeroSection/Hero'
+import NewHero from '@/components/HeroSection/NewHero'
 import { Path } from '@/components/Path/Path'
 import Products from '@/components/ProductsSection/Products'
 import Servicios from '@/components/Servicios/Servicios'
@@ -45,7 +46,8 @@ export default function Home() {
   return (
     // <main className="flex min-h-screen flex-col items-center w-full">
     <main className="flex flex-col items-center w-full">
-      <HeroSectionImageWithReviews />
+      {/* <HeroSectionImageWithReviews /> */}
+      <NewHero />
       <Resources />
       {/* <SocialProof /> */}
       {/* <Brands /> */}

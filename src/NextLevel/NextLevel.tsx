@@ -19,10 +19,10 @@ export const TeamSection = () => {
           <h3 className="text-5xl md:text-5xl font-extrabold text-center text-[#6E5686] leading-tight text-balance">
             Llevá tu equipo <br /> al siguiente nivel
           </h3>
-          <p className="mt-4 text-center text-lg lg:max-w-[75%] mx-auto text-balance">
+          <p className="mt-4 text-lg lg:max-w-[75%] mx-auto text-balance text-justify lg:text-center">
             No esperes más para transformar la comunicación en tu empresa.
           </p>
-          <p className="mt-4 text-center text-lg lg:max-w-[75%] mx-auto leading-2 text-balance">
+          <p className="mt-4 text-lg lg:max-w-[75%] mx-auto leading-2 text-balance text-justify lg:text-center">
             Desde dinámicas gratuitas hasta regalos personalizados, en{' '}
             <span className="font-bold">En Palabras</span> tenemos todo lo que
             necesitás para mejorar el trabajo en equipo y crear una cultura de
@@ -64,7 +64,7 @@ export const TeamSection = () => {
           <div className="mt-8 text-center">
             <button
               className="bg-[#6E5686] text-white font-bold 
-          py-3 px-6 rounded-lg shadow-lg hover:bg-[#513a67] transition"
+          py-3 px-6 rounded-lg shadow-lg hover:bg-[#513a67] transition text-balance"
             >
               ¡TRANSFORMÁ TU EQUIPO HOY!
             </button>

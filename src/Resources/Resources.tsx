@@ -8,7 +8,7 @@ export const Resources = () => {
   return (
     <section className="bg-[#E9DBF7] flex flex-col items-center justify-center w-full ">
       <div
-        className="bg-[#FAF7FE] p-10 sm:p-12 lg:p-20 pb-0 w-full"
+        className="bg-[#FAF7FE] px-4 py-10 sm:py-12 lg:p-20 pb-0 w-full shadow-2xl "
         style={{
           borderTopRightRadius: '2.5rem',
           borderTopLeftRadius: '2.5rem',
@@ -22,18 +22,21 @@ export const Resources = () => {
           <p className="font-extrabold text-3xl text-center md:text-left py-2 mb-2 tracking-wider">
             ¿Por qué es importante fomentar conversaciones en tu equipo?
           </p>
-          <p className="font-semibold text-xl text-left py-2 max-w-5xl tracking-wide">
+          <p className="font-semibold text-xl py-2 max-w-5xl tracking-wide text-justify lg:text-left">
             Las conversaciones auténticas no solo mejoran el rendimiento, sino
             que impulsan el crecimiento personal y profesional de tu equipo.
           </p>
-          <p className="text-lg text-[#6E5686] py-2 leading-relaxed mb-6 text-left max-w-5xl font-light tracking-wide">
+          <p
+            className="text-lg text-[#6E5686] py-2 leading-relaxed mb-6 text-justify lg:text-left 
+          max-w-5xl font-light tracking-wide"
+          >
             Fomentar la comunicación genuina permite construir confianza,
             resolver conflictos y despertar nuevas ideas. Cuando cada miembro se
             siente escuchado y valorado, el compromiso y la colaboración crecen,
             y con ellos, los resultados.
           </p>
         </div>
-        <div className="px-4 lg:px-0 mx-auto max-w-6xl">
+        <div className="lg:px-0 mx-auto max-w-6xl">
           <div className="grid grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 lg:grid-cols-2">
             <div className="overflow-hidden bg-white rounded shadow ">
               <div className="p-5 flex flex-col space-between justify-between h-full">

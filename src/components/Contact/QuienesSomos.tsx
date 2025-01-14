@@ -12,7 +12,7 @@ export const AboutSection = () => {
         <h2 className="font-extrabold mb-4 text-5xl md:text-6xl text-center text-[#6E5686]">
           ¿Quiénes somos?
         </h2>
-        <p className="text-xl text-[#6E5686] py-4 leading-relaxed mb-6 lg:max-w-[75%] mx-auto text-balance">
+        <p className="text-xl text-[#6E5686] py-4 px-4 leading-relaxed mb-6 lg:max-w-[75%] mx-auto text-justify lg:text-left">
           En <span className="font-bold">En Palabras</span> somos especialistas
           en crear experiencias que conectan y transforman equipos a través de
           la comunicación y empatía. Nuestra misión es ayudarte a construir una

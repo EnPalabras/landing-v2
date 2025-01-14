@@ -88,7 +88,7 @@ const TestimonialCard = ({ name, company, testimonial, rating, src }: any) => {
         </div>
         <div className="py-4 flex justify-between flex-col">
           <blockquote className="">
-            <p className="text-lg text-black px-4 text-balance">
+            <p className="text-lg text-black px-6 text-justify lg:text-center">
               {testimonial}
             </p>
           </blockquote>
@@ -115,7 +115,7 @@ export default function Testimonials() {
         <div className="px-4 w-full sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="max-w-4xl mx-auto text-center pb-8 lg:pb-0">
             <h3
-              className="text-6xl font-extrabold leading-tight 
+              className="text-5xl font-extrabold leading-tight 
           text-white sm:text-6xl lg:text-7xl text-balance"
             >
               Empresas que confiaron en nosotros
