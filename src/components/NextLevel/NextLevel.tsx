@@ -11,18 +11,24 @@ export const TeamSection = () => {
         style={{
           backgroundImage: `url(${bgimgDesktop.src})`,
         }}
+        id="nosotros"
       >
         <div
-          className="bg-white bg-opacity-90 p-8 md:p-12 lg:py-20
-        rounded-lg shadow-lg max-w-4xl text-[#6E5686] flex flex-col gap-6"
+          className="bg-white bg-opacity-90 p-8 md:p-12 lg:py-20 mx-4
+        rounded-lg shadow-lg max-w-5xl text-[#6E5686] flex flex-col gap-6"
         >
-          <h3 className="text-5xl md:text-5xl font-extrabold text-center text-[#6E5686] leading-tight text-balance">
+          <h3
+            className="text-6xl md:text-7xl font-extrabold text-center text-[#6E5686] leading-tight text-balance"
+            style={{
+              fontFamily: 'GothamUltra, sans-serif',
+            }}
+          >
             Llevá tu equipo <br /> al siguiente nivel
           </h3>
-          <p className="mt-4 text-lg lg:max-w-[75%] mx-auto text-balance text-justify lg:text-center">
+          <p className="mt-4 text-xl lg:max-w-[75%] mx-auto text-balance text-justify lg:text-center">
             No esperes más para transformar la comunicación en tu empresa.
           </p>
-          <p className="mt-4 text-lg lg:max-w-[75%] mx-auto leading-2 text-balance text-justify lg:text-center">
+          <p className="mt-4 text-xl lg:max-w-[75%] mx-auto leading-2 text-pretty text-justify lg:text-center">
             Desde dinámicas gratuitas hasta regalos personalizados, en{' '}
             <span className="font-bold">En Palabras</span> tenemos todo lo que
             necesitás para mejorar el trabajo en equipo y crear una cultura de
@@ -49,13 +55,18 @@ export const TeamSection = () => {
           className="bg-white bg-opacity-80 px-8 py-12
         rounded-lg shadow-lg max-w-xl mx-10 text-[#6E5686] flex flex-col gap-6"
         >
-          <h3 className="text-4xl md:text-5xl font-extrabold text-center text-[#6E5686] leading-tight">
+          <h3
+            className="text-4xl md:text-5xl font-extrabold text-center text-[#6E5686] leading-tight"
+            style={{
+              fontFamily: 'GothamUltra, sans-serif',
+            }}
+          >
             Llevá tu equipo <br /> al siguiente nivel
           </h3>
-          <p className="mt-4 text-center text-xl  mx-auto text-balance">
+          <p className="mt-4 text-center text-xl  mx-auto text-pretty">
             No esperes más para transformar la comunicación en tu empresa.
           </p>
-          <p className="mt-4 text-center text-xl  mx-auto leading-2 text-balance">
+          <p className="mt-4 text-center text-xl  mx-auto leading-2 text-pretty">
             Desde dinámicas gratuitas hasta regalos personalizados, en{' '}
             <span className="font-bold">En Palabras</span> tenemos todo lo que
             necesitás para mejorar el trabajo en equipo y crear una cultura de
@@ -64,7 +75,10 @@ export const TeamSection = () => {
           <div className="mt-8 text-center">
             <button
               className="bg-[#6E5686] text-white font-bold 
-          py-3 px-6 rounded-lg shadow-lg hover:bg-[#513a67] transition text-balance"
+          py-3 px-6 rounded-lg shadow-lg hover:bg-[#513a67] transition text-pretty"
+              style={{
+                fontFamily: 'GothamUltra, sans-serif',
+              }}
             >
               ¡TRANSFORMÁ TU EQUIPO HOY!
             </button>

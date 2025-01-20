@@ -1,6 +1,4 @@
 import Link from 'next/link'
-import capsula from '@/../public/assets/capsulaimg.webp'
-
 import juegosImageMobile from '@/../public/images/mobile/2.jpg'
 import ruletaImageMobile from '@/../public/images/mobile/3.jpg'
 
@@ -10,25 +8,36 @@ export const Resources = () => {
       <div
         className="bg-[#FAF7FE] px-4 py-10 sm:py-12 lg:p-20 pb-0 w-full shadow-2xl "
         style={{
-          borderTopRightRadius: '2.5rem',
-          borderTopLeftRadius: '2.5rem',
+          borderTopRightRadius: '3rem',
+          borderTopLeftRadius: '3rem',
+          fontFamily: 'GothamRounded, sans-serif',
         }}
         id="recursos"
       >
         <div className="text-center text-[#6E5686] max-w-6xl mx-auto flex flex-col gap-4">
-          <h2 className="font-extrabold mb-4 text-6xl text-center md:text-left text-[#6E5686] text-balance">
+          <h2
+            className="font-extrabold mb-4 text-6xl text-center lg:text-left text-[#6E5686] text-balance"
+            style={{
+              fontFamily: 'GothamUltra, sans-serif',
+            }}
+          >
             Recursos para tu equipo
           </h2>
-          <p className="font-extrabold text-3xl text-center md:text-left py-2 mb-2 tracking-wider">
+          <p
+            className="font-extrabold text-3xl text-center lg:text-left py-2 mb-2 tracking-wider"
+            style={{
+              fontFamily: 'GothamUltra, sans-serif',
+            }}
+          >
             ¿Por qué es importante fomentar conversaciones en tu equipo?
           </p>
-          <p className="font-semibold text-xl py-2 max-w-5xl tracking-wide text-justify lg:text-left">
+          <p className="font-semibold text-xl py-2 max-w-5xl tracking-wide text-justify lg:text-left text-pretty">
             Las conversaciones auténticas no solo mejoran el rendimiento, sino
             que impulsan el crecimiento personal y profesional de tu equipo.
           </p>
           <p
             className="text-lg text-[#6E5686] py-2 leading-relaxed mb-6 text-justify lg:text-left 
-          max-w-5xl font-light tracking-wide"
+          max-w-5xl tracking-wide text-pretty"
           >
             Fomentar la comunicación genuina permite construir confianza,
             resolver conflictos y despertar nuevas ideas. Cuando cada miembro se
@@ -36,11 +45,21 @@ export const Resources = () => {
             y con ellos, los resultados.
           </p>
         </div>
-        <div className="lg:px-0 mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 lg:grid-cols-2">
+        <div
+          className="lg:px-0 mx-auto max-w-6xl"
+          style={{
+            fontFamily: 'GothamRounded, sans-serif',
+          }}
+        >
+          <div className="grid grid-cols-1 gap-6 mx-auto mt-6  lg:grid-cols-2">
             <div className="overflow-hidden bg-white rounded shadow ">
               <div className="p-5 flex flex-col space-between justify-between h-full">
-                <h3 className="text-3xl font-extrabold text-gray-900 pb-5">
+                <h3
+                  className="text-3xl  font-extrabold text-[#6E5686] pb-5 pt-2"
+                  style={{
+                    fontFamily: 'GothamUltra, sans-serif',
+                  }}
+                >
                   {' '}
                   Regalá En Palabras <br />
                   <br />
@@ -93,7 +112,12 @@ export const Resources = () => {
             <div className="overflow-hidden bg-white rounded shadow">
               <div className="p-5 flex flex-col space-between justify-between h-full">
                 <div className="pb-5">
-                  <h3 className="text-3xl font-extrabold text-gray-900">
+                  <h3
+                    className="text-3xl py-2 font-extrabold text-[#6E5686]"
+                    style={{
+                      fontFamily: 'GothamUltra, sans-serif',
+                    }}
+                  >
                     {' '}
                     Llevá En Palabras a las reuniones de equipo{' '}
                   </h3>

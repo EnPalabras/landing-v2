@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'GothamUltra';
+  src: url('/fonts/Gotham Ultra/Gotham-Ultra.ttf') format('truetype');
+  font-weight: 900; /* Ultra suele ser el peso más alto */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('/fonts/Gotham Ultra/Gotham-Medium.otf') format('opentype');
+  font-weight: 400; /* Ultra suele ser el peso más alto */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('/fonts/Gotham Ultra/Gotham-Bold.otf') format('opentype');
+  font-weight: 700; /* Ultra suele ser el peso más alto */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('/fonts/Gotham Ultra/Gotham-Book.otf') format('opentype');
+  font-weight: 600; /* Ultra suele ser el peso más alto */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded';
+  src: url('/fonts/Gotham Rounded/gothamrnd_light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded';
+  src: url('/fonts/Gotham Rounded/gothamrnd_lightitalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GothamRounded';
+  src: url('/fonts/Gotham Rounded/gothamrnd_book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded';
+  src: url('/fonts/Gotham Rounded/gothamrnd_bookitalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GothamRounded';
+  src: url('/fonts/Gotham Rounded/gothamrnd_medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded';
+  src: url('/fonts/Gotham Rounded/gothamrnd_mediumitalic.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GothamRounded';
+  src: url('/fonts/Gotham Rounded/gothamrnd_bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded';
+  src: url('/fonts/Gotham Rounded/gothamrnd_bolditalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}

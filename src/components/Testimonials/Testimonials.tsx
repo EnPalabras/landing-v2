@@ -88,7 +88,7 @@ const TestimonialCard = ({ name, company, testimonial, rating, src }: any) => {
         </div>
         <div className="py-4 flex justify-between flex-col">
           <blockquote className="">
-            <p className="text-lg text-black px-6 text-justify lg:text-center">
+            <p className="text-lg text-black px-6 text-justify lg:text-center text-pretty">
               {testimonial}
             </p>
           </blockquote>
@@ -102,21 +102,23 @@ const TestimonialCard = ({ name, company, testimonial, rating, src }: any) => {
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#E9DBF7] w-full">
+    <section className="bg-[#E9DBF7] w-full" id="experiencias">
       <div
         className="py-10 bg-[#6E5686] sm:py-12 lg:py-20 
         w-full rounded-b-3xl "
         style={{
-          borderBottomRightRadius: '2.5rem',
-          borderBottomLeftRadius: '2.5rem',
+          borderBottomRightRadius: '3rem',
+          borderBottomLeftRadius: '3rem',
         }}
-        id="experiencias"
       >
         <div className="px-4 w-full sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="max-w-4xl mx-auto text-center pb-8 lg:pb-0">
             <h3
               className="text-5xl font-extrabold leading-tight 
           text-white sm:text-6xl lg:text-7xl text-balance"
+              style={{
+                fontFamily: 'GothamUltra, sans-serif',
+              }}
             >
               Empresas que confiaron en nosotros
             </h3>
@@ -132,6 +134,9 @@ export default function Testimonials() {
             <button
               className=" bg-[#E9DBF7] text-[#6E5686] rounded-lg uppercase p-4 px-6 font-semibold            
           text-xl hover:bg-[#D6C9E2] transition-all duration-300 ease-in-out"
+              style={{
+                fontFamily: 'GothamUltra, sans-serif',
+              }}
             >
               Probalo vos también
             </button>

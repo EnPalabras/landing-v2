@@ -1,13 +1,10 @@
 import type { Metadata } from 'next'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
-import { Inter } from 'next/font/google'
 import './globals.css'
+import './fonts.css'
 import Header from '@/components/Header/Header'
-import Footer from '@/components/Footer/Footer'
 import { Toaster } from '@/components/ui/toaster'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'En Palabras',
@@ -38,8 +35,6 @@ export const metadata: Metadata = {
   },
 }
 
-// Podríamos agregar un evento en la sección de productos para ver si hacen click ahí
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -47,12 +42,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        style={{
+          fontFamily: 'GothamRounded, sans-serif',
+        }}
+      >
         <Header />
-
         {children}
         <Toaster />
-        {/* <Footer /> */}
       </body>
       <GoogleAnalytics gaId="G-FZYCR4YBVC" />
       <GoogleTagManager gtmId="GTM-WBMVQW86" />

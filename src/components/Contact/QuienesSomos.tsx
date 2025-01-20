@@ -9,10 +9,15 @@ export const AboutSection = () => {
             className="w-16 h-16"
           />
         </div>
-        <h2 className="font-extrabold mb-4 text-5xl md:text-6xl text-center text-[#6E5686]">
+        <h2
+          className="font-extrabold mb-4 text-5xl md:text-6xl text-center text-[#6E5686]"
+          style={{
+            fontFamily: 'GothamUltra, sans-serif',
+          }}
+        >
           ¿Quiénes somos?
         </h2>
-        <p className="text-xl text-[#6E5686] py-4 px-4 leading-relaxed mb-6 lg:max-w-[75%] mx-auto text-justify lg:text-left">
+        <p className="text-xl text-[#6E5686] py-4 px-4 leading-relaxed mb-6 lg:max-w-[75%] mx-auto text-center text-pretty tracking-wide">
           En <span className="font-bold">En Palabras</span> somos especialistas
           en crear experiencias que conectan y transforman equipos a través de
           la comunicación y empatía. Nuestra misión es ayudarte a construir una
@@ -20,7 +25,12 @@ export const AboutSection = () => {
           impulsen el éxito y los resultados.
         </p>
         <div>
-          <button className="bg-[#6E5686] text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-[#513a67] transition">
+          <button
+            className="bg-[#6E5686] text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-[#513a67] transition tracking-wider"
+            style={{
+              fontFamily: 'GothamUltra, sans-serif',
+            }}
+          >
             CONOCÉ NUESTRAS PROPUESTAS
           </button>
         </div>

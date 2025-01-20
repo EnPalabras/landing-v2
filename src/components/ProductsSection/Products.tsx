@@ -9,18 +9,18 @@ import {
 
 export default function Products() {
   return (
-    <section className="bg-[#6E5686] w-full">
+    <section className="bg-[#6E5686] w-full" id="productos">
       <div
         className="hidden md:block py-10  
-        sm:pt-12 lg:pt-16 pb-12 w-full rounded-b-3xl bg-[#FAF7FE]"
+        sm:pt-8 pb-12 w-full rounded-b-3xl bg-[#FAF7FE]"
         style={{
-          borderBottomRightRadius: '2.5rem',
-          borderBottomLeftRadius: '2.5rem',
+          borderBottomRightRadius: '3rem',
+          borderBottomLeftRadius: '3rem',
+          fontFamily: 'GothamRounded, sans-serif',
         }}
-        id="productos"
       >
         <div className="px-4 mx-auto sm:px-12 lg:px-16 ">
-          <h3 className="leading-tight text-[#6E5686] text-center tracking-wide text-2xl font-semibold">
+          <h3 className="leading-tight text-[#6E5686] text-center tracking-wide text-2xl font-normal">
             Descubrí nuestros productos
           </h3>
 
@@ -39,10 +39,15 @@ export default function Products() {
                     alt="Desconectados para empresas"
                   />
 
-                  <div className="absolute top-4 left-4 ">
+                  <div
+                    className="absolute top-4 left-4 "
+                    style={{
+                      fontFamily: 'GothamRounded, sans-serif',
+                    }}
+                  >
                     <span
                       className="px-4 py-2 text-xs font-semibold tracking-widest 
-                  text-gray-900 uppercase bg-[#FAF7FE] rounded-full"
+                  text-gray-600 uppercase bg-[#FAF7FE] rounded-full"
                     >
                       {' '}
                       Juegos{' '}
@@ -50,15 +55,20 @@ export default function Products() {
                   </div>
                 </div>
                 <div>
-                  <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
+                  <span className="block mt-6 text-sm font-semibold tracking-wider text-gray-500 uppercase">
                     {' '}
                     Personalizá tu Juego{' '}
                   </span>
-                  <p className="mt-5 text-2xl font-semibold">
+                  <p
+                    className="mt-5 text-2xl font-bold"
+                    style={{
+                      fontFamily: 'GothamRounded, sans-serif',
+                    }}
+                  >
                     {' '}
                     Cartas Personalizadas{' '}
                   </p>
-                  <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
+                  <p className="mt-4 text-base text-gray-600  text-justify lg:text-left text-pretty">
                     Te invitamos a crear cartas con preguntas personalizadas
                     sobre la cultura o experiencia de tu marca. Nos compartís tu
                     idea y el equipo de En palabras la transforma una charla
@@ -79,10 +89,15 @@ export default function Products() {
                     alt="Juego de Cartas Desconectados"
                   />
 
-                  <div className="absolute top-4 left-4 ">
+                  <div
+                    className="absolute top-4 left-4 "
+                    style={{
+                      fontFamily: 'GothamRounded, sans-serif',
+                    }}
+                  >
                     <span
                       className="px-4 py-2 text-xs font-semibold tracking-widest 
-                  text-gray-900 uppercase bg-[#FAF7FE] rounded-full"
+                  text-gray-600 uppercase bg-[#FAF7FE] rounded-full"
                     >
                       {' '}
                       Juegos{' '}
@@ -90,12 +105,20 @@ export default function Products() {
                   </div>
                 </div>
                 <div>
-                  <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
+                  <span className="block mt-6 text-sm font-semibold tracking-wider text-gray-500 uppercase">
                     {' '}
                     Jugá y Conectá{' '}
                   </span>
-                  <p className="mt-5 text-2xl font-semibold"> Desconectados </p>
-                  <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
+                  <p
+                    className="mt-5 text-2xl font-bold"
+                    style={{
+                      fontFamily: 'GothamRounded, sans-serif',
+                    }}
+                  >
+                    {' '}
+                    Desconectados{' '}
+                  </p>
+                  <p className="mt-4 text-base text-gray-600  text-justify lg:text-left text-pretty">
                     Es una invitación a encontrarnos con nuestra familia, pareja
                     y amistades. Las cartas que encontraran tienen el objetivo
                     de funcionar como disparadores para compartir creencias y
@@ -117,10 +140,15 @@ export default function Products() {
                     alt="Juego de Cartas Descubriendo"
                   />
 
-                  <div className="absolute top-4 left-4 ">
+                  <div
+                    className="absolute top-4 left-4 "
+                    style={{
+                      fontFamily: 'GothamRounded, sans-serif',
+                    }}
+                  >
                     <span
                       className="px-4 py-2 text-xs font-semibold tracking-widest 
-                  text-gray-900 uppercase bg-[#FAF7FE] rounded-full"
+                  text-gray-600 uppercase bg-[#FAF7FE] rounded-full"
                     >
                       {' '}
                       Juegos{' '}
@@ -128,12 +156,20 @@ export default function Products() {
                   </div>
                 </div>
                 <div>
-                  <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
+                  <span className="block mt-6 text-sm font-semibold tracking-wider text-gray-500 uppercase">
                     {' '}
                     Juga con los mas chicos{' '}
                   </span>
-                  <p className="mt-5 text-2xl font-semibold"> Descubriendo </p>
-                  <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
+                  <p
+                    className="mt-5 text-2xl font-bold"
+                    style={{
+                      fontFamily: 'GothamRounded, sans-serif',
+                    }}
+                  >
+                    {' '}
+                    Descubriendo{' '}
+                  </p>
+                  <p className="mt-4 text-base text-gray-600  text-justify lg:text-left text-pretty">
                     Conectar con los/as niños/as no siempre es fácil, y la
                     rutina puede complicar estos momentos. Descubriendo te
                     invita a compartir preguntas que abren oportunidades para
@@ -155,10 +191,15 @@ export default function Products() {
                     alt="Destapados Juego de Cartas para Previas"
                   />
 
-                  <div className="absolute top-4 left-4 ">
+                  <div
+                    className="absolute top-4 left-4 "
+                    style={{
+                      fontFamily: 'GothamRounded, sans-serif',
+                    }}
+                  >
                     <span
                       className="px-4 py-2 text-xs font-semibold tracking-widest 
-                  text-gray-900 uppercase bg-[#FAF7FE] rounded-full"
+                  text-gray-600 uppercase bg-[#FAF7FE] rounded-full"
                     >
                       {' '}
                       Juegos{' '}
@@ -166,12 +207,20 @@ export default function Products() {
                   </div>
                 </div>
                 <div>
-                  <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
+                  <span className="block mt-6 text-sm font-semibold tracking-wider text-gray-500 uppercase">
                     {' '}
                     EXPLORÁ Y DESTAPÁ TABÚES
                   </span>
-                  <p className="mt-5 text-2xl font-semibold"> Destapados </p>
-                  <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
+                  <p
+                    className="mt-5 text-2xl font-bold"
+                    style={{
+                      fontFamily: 'GothamRounded, sans-serif',
+                    }}
+                  >
+                    {' '}
+                    Destapados{' '}
+                  </p>
+                  <p className="mt-4 text-base text-gray-600  text-justify lg:text-left text-pretty">
                     Destapados es un disparador de encuentros festivos e
                     íntimos, corporales y emocionales. Las cartas buscan
                     destapar los estereotipos y prejuicios que se acarrean,
@@ -194,10 +243,15 @@ export default function Products() {
                     alt="Juego de Cartas Año Nuevo"
                   />
 
-                  <div className="absolute top-4 left-4 ">
+                  <div
+                    className="absolute top-4 left-4 "
+                    style={{
+                      fontFamily: 'GothamRounded, sans-serif',
+                    }}
+                  >
                     <span
                       className="px-4 py-2 text-xs font-semibold tracking-widest 
-                  text-gray-900 uppercase bg-[#FAF7FE] rounded-full"
+                  text-gray-600 uppercase bg-[#FAF7FE] rounded-full"
                     >
                       {' '}
                       Juegos{' '}
@@ -205,15 +259,20 @@ export default function Products() {
                   </div>
                 </div>
                 <div>
-                  <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
+                  <span className="block mt-6 text-sm font-semibold tracking-wider text-gray-500 uppercase">
                     {' '}
                     Hacé tu balance{' '}
                   </span>
-                  <p className="mt-5 text-2xl font-semibold">
+                  <p
+                    className="mt-5 text-2xl font-bold"
+                    style={{
+                      fontFamily: 'GothamRounded, sans-serif',
+                    }}
+                  >
                     {' '}
                     Edición Año Nuevo{' '}
                   </p>
-                  <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
+                  <p className="mt-4 text-base text-gray-600  text-justify lg:text-left text-pretty">
                     Es una invitación a reflexionar sobre el año que pasó para
                     recibir el nuevo con mayor conciencia. Las cartas funcionan
                     como disparadores para revisar lo vivido, cerrar etapas y
@@ -234,10 +293,15 @@ export default function Products() {
                     alt="Journal de En Palabras"
                   />
 
-                  <div className="absolute top-4 left-4 ">
+                  <div
+                    className="absolute top-4 left-4 "
+                    style={{
+                      fontFamily: 'GothamRounded, sans-serif',
+                    }}
+                  >
                     <span
                       className="px-4 py-2 text-xs font-semibold tracking-widest 
-                  text-gray-900 uppercase bg-[#FAF7FE] rounded-full"
+                  text-gray-600 uppercase bg-[#FAF7FE] rounded-full"
                     >
                       {' '}
                       Journal{' '}
@@ -245,12 +309,20 @@ export default function Products() {
                   </div>
                 </div>
                 <div>
-                  <span className="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
+                  <span className="block mt-6 text-sm font-semibold tracking-wider text-gray-500 uppercase">
                     {' '}
                     Conectá con vos mismo{' '}
                   </span>
-                  <p className="mt-5 text-2xl font-semibold"> Journal </p>
-                  <p className="mt-4 text-base text-gray-600  text-justify lg:text-left">
+                  <p
+                    className="mt-5 text-2xl font-bold"
+                    style={{
+                      fontFamily: 'GothamRounded, sans-serif',
+                    }}
+                  >
+                    {' '}
+                    Journal{' '}
+                  </p>
+                  <p className="mt-4 text-base text-gray-600  text-justify lg:text-left text-pretty">
                     Es un diario personal que te invita a dialogar sinceramente
                     con vos mismo. Incluye preguntas diarias y dinámicas para
                     ayudarte a salir del <i>"modo automático"</i> y embarcarte
@@ -268,47 +340,52 @@ export default function Products() {
         className="block md:hidden antialiased bg-[#FAF7FE] pt-12 pb-12 w-full
       rounded-b-3xl"
         style={{
-          borderBottomRightRadius: '2.5rem',
-          borderBottomLeftRadius: '2.5rem',
+          borderTopRightRadius: '3rem',
+          borderTopLeftRadius: '3rem',
         }}
       >
         <div className="px-4 mx-auto sm:px-6 lg:px-8 ">
-          <h3 className="leading-tight text-[#6E5686] text-center text-xl tracking-wide mb-8 font-semibold">
+          <h3
+            className="leading-tight text-[#6E5686] text-center text-xl tracking-wide mb-8"
+            style={{
+              fontFamily: 'GothamRounded, sans-serif',
+            }}
+          >
             Descubrí nuestros productos
           </h3>
 
           <div className="grid gap-4 grid-cols-1">
             <div className="flex items-center justify-between rounded-lg border border-gray-200 bg-white px-8 py-4">
-              <span className="text-lg font-bold text-gray-900 ">
+              <span className="text-lg font-bold text-gray-600 ">
                 Cartas Personalizadas
               </span>
               <SheetPersonalizadas />
             </div>
 
             <div className="flex items-center justify-between rounded-lg border border-gray-200 bg-white px-8 py-4">
-              <span className="text-lg font-bold text-gray-900 ">
+              <span className="text-lg font-bold text-gray-600 ">
                 Desconectados
               </span>
               <SheetDesconectados />
             </div>
             <div className="flex items-center justify-between rounded-lg border border-gray-200 bg-white px-8 py-4">
-              <span className="text-lg font-bold text-gray-900 ">
+              <span className="text-lg font-bold text-gray-600 ">
                 Descubriendo
               </span>
               <SheetDescubriendo />
             </div>
             <div className="flex items-center justify-between rounded-lg border border-gray-200 bg-white px-8 py-4">
-              <span className="text-lg font-bold text-gray-900 ">Journal</span>
+              <span className="text-lg font-bold text-gray-600 ">Journal</span>
               <SheetJournal />
             </div>
             <div className="flex items-center justify-between rounded-lg border border-gray-200 bg-white px-8 py-4">
-              <span className="text-lg font-bold text-gray-900 ">
+              <span className="text-lg font-bold text-gray-600 ">
                 Destapados
               </span>
               <SheetDestapados />
             </div>
             <div className="flex items-center justify-between rounded-lg border border-gray-200 bg-white px-8 py-4">
-              <span className="text-lg font-bold text-gray-900 ">
+              <span className="text-lg font-bold text-gray-600 ">
                 Año Nuevo
               </span>
               <SheetAnoNuevo />

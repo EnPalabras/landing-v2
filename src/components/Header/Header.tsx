@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <>
       <div className="mx-auto hidden lg:block bg-[#E9DBF7] w-full">
-        <header className="">
+        <header className=" max-w-7xl mx-auto">
           <div className="px-4 mx-auto sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16 lg:h-20">
               <div className="flex-shrink-0">
@@ -32,7 +32,7 @@ export default function Header() {
 
               <button
                 type="button"
-                className="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100"
+                className="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-[#c5b0db]"
               >
                 <svg
                   className="block w-6 h-6"
@@ -82,28 +82,18 @@ export default function Header() {
                   {' '}
                   Productos{' '}
                 </a>
-
                 <a
-                  href="/#proceso"
-                  title="Proceso"
+                  href="/#experiencias"
+                  title="Experiencias"
                   className="text-base text-black transition-all duration-200 hover:text-opacity-80"
                 >
                   {' '}
-                  Proceso{' '}
-                </a>
-
-                <a
-                  href="/#faqs"
-                  title="Preguntas Frecuentes"
-                  className="text-base text-black transition-all duration-200 hover:text-opacity-80"
-                >
-                  {' '}
-                  FAQs{' '}
+                  Experiencias{' '}
                 </a>
               </div>
               <div className="space-x-4">
                 <Link
-                  href="/#contacto"
+                  href="https://enpalabras.com.ar/contacto"
                   className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 
                  font-semibold text-gray-800 bg-gray-800 rounded-full border bg-opacity-10 hover:bg-opacity-20 border-gray-400"
                 >
@@ -124,9 +114,9 @@ export default function Header() {
           </div>
         </header>
       </div>
-      <div className="flex justify-end w-full lg:hidden md:px-6 bg-white">
+      <div className="flex justify-end w-full lg:hidden md:px-6 bg-[#E9DBF7]">
         <Sheet open={isTOCOpen}>
-          <div className="flex flex-row justify-between w-full items-center bg-white p-4">
+          <div className="flex flex-row justify-between w-full items-center bg-[#E9DBF7] p-4">
             <svg
               className="w-8 h-8 text-transparent"
               aria-hidden="true"
@@ -153,7 +143,7 @@ export default function Header() {
 
             <svg
               onClick={() => setIsTOCOpen(true)}
-              className="w-8 h-8 text-gray-800 dark:text-white"
+              className="w-8 h-8 text-gray-800"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -169,9 +159,14 @@ export default function Header() {
               />
             </svg>
           </div>
-          <SheetContent>
+          <SheetContent
+            style={{
+              padding: '1.5rem',
+              backgroundColor: '#E9DBF7',
+            }}
+          >
             <SheetHeader>
-              <div className="flex justify-end bg-white w-full">
+              <div className="flex justify-end bg-[#E9DBF7] w-full">
                 <Image
                   src={logoEP}
                   className="mx-auto"
@@ -200,53 +195,49 @@ export default function Header() {
               </div>
               <SheetDescription className="bg-yellow"></SheetDescription>
             </SheetHeader>
-            <div className="flex h-full justify-between flex-col">
+            <div
+              className="flex h-full justify-between flex-col"
+              style={{
+                fontFamily: 'GothamRounded, sans-serif',
+              }}
+            >
               <div className="flex flex-col justify-start gap-4 my-4">
                 {' '}
                 <Link
                   className="group inline-flex h-9 w-full items-center 
-                     rounded-md bg-white px-4 py-5 text-base font-medium 
-                    transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
-                  href="#"
+                     rounded-md bg-[#E9DBF7] px-4 py-5 text-base font-medium 
+                    transition-colors hover:bg-[#c5b0db] hover:text-gray-900 focus:outline-none"
+                  href="/"
                   onClick={() => setIsTOCOpen(false)}
                 >
                   Inicio
                 </Link>
                 <Link
                   className="group inline-flex h-9 w-full items-center 
-                     rounded-md bg-white px-4 py-5 text-base font-medium 
-                    transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
+                     rounded-md bg-[#E9DBF7] px-4 py-5 text-base font-medium 
+                    transition-colors hover:bg-[#c5b0db] hover:text-gray-900 focus:outline-none"
+                  href="/#recursos"
+                  onClick={() => setIsTOCOpen(false)}
+                >
+                  Recursos para tu equipo
+                </Link>
+                <Link
+                  className="group inline-flex h-9 w-full items-center 
+                     rounded-md bg-[#E9DBF7] px-4 py-5 text-base font-medium 
+                    transition-colors hover:bg-[#c5b0db] hover:text-gray-900 focus:outline-none"
+                  href="/#productos"
+                  onClick={() => setIsTOCOpen(false)}
+                >
+                  Nuestros productos
+                </Link>
+                <Link
+                  className="group inline-flex h-9 w-full items-center 
+                     rounded-md bg-[#E9DBF7] px-4 py-5 text-base font-medium 
+                    transition-colors hover:bg-[#c5b0db] hover:text-gray-900 focus:outline-none"
                   href="/#nosotros"
                   onClick={() => setIsTOCOpen(false)}
                 >
                   Sobre Nosotros
-                </Link>
-                <Link
-                  className="group inline-flex h-9 w-full items-center 
-                     rounded-md bg-white px-4 py-5 text-base font-medium 
-                    transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
-                  href="/#productos"
-                  onClick={() => setIsTOCOpen(false)}
-                >
-                  Productos
-                </Link>
-                <Link
-                  className="group inline-flex h-9 w-full items-center 
-                     rounded-md bg-white px-4 py-5 text-base font-medium 
-                    transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
-                  href="/#proceso"
-                  onClick={() => setIsTOCOpen(false)}
-                >
-                  Proceso
-                </Link>
-                <Link
-                  className="group inline-flex h-9 w-full items-center 
-                     rounded-md bg-white px-4 py-5 text-base font-medium 
-                    transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none"
-                  href="/#faqs"
-                  onClick={() => setIsTOCOpen(false)}
-                >
-                  FAQs
                 </Link>
               </div>
               <div className="flex flex-col w-full gap-6 my-10">
@@ -280,12 +271,19 @@ export default function Header() {
                     Tienda
                   </Button>
                 </Link>
-                <Button
-                  className="px-2 py-1 text-xs"
+                <Link
+                  href="https://enpalabras.com.ar/contacto"
+                  target="_blank"
                   onClick={() => setIsTOCOpen(false)}
+                  rel="noopener noreferrer"
                 >
-                  Contacto
-                </Button>
+                  <Button
+                    className="px-2 py-1 text-xs w-full"
+                    onClick={() => setIsTOCOpen(false)}
+                  >
+                    Contacto
+                  </Button>
+                </Link>
               </div>
             </div>
           </SheetContent>

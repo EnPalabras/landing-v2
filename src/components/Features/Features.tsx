@@ -53,8 +53,8 @@ export default function Features() {
         className="py-10 bg-[#E9DBF7] sm:py-12 lg:py-20 
         w-full rounded-b-3xl max-w-7xl mx-auto"
         style={{
-          borderBottomRightRadius: '2.5rem',
-          borderBottomLeftRadius: '2.5rem',
+          borderTopRightRadius: '3rem',
+          borderTopLeftRadius: '3rem',
         }}
         id="features"
       >
@@ -63,6 +63,9 @@ export default function Features() {
             <h3
               className="text-4xl font-extrabold leading-tight 
           text-[#6E5686] sm:text-5xl lg:text-6xl"
+              style={{
+                fontFamily: 'GothamUltra, sans-serif',
+              }}
             >
               ¿Qué gano fortaleciendo conversaciones genuinas?
             </h3>
@@ -81,6 +84,9 @@ export default function Features() {
             <button
               className="text-white bg-[#6E5686] rounded-lg uppercase py-4 px-6 font-bold            
           text-xl hover:bg-[#513a67] transition-all duration-300 ease-in-out"
+              style={{
+                fontFamily: 'GothamUltra, sans-serif',
+              }}
             >
               Fomentá la comunicación auténtica
             </button>
