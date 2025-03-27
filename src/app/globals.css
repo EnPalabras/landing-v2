@@ -2,90 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
+/* Clases de utilidad para fuentes */
+@layer base {
+  body {
+    @apply font-rounded text-base;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-ultra;
+  }
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
+/* Clases personalizadas para fuentes */
+@layer utilities {
+  .font-rounded {
+    font-family: var(--font-gotham-rounded), sans-serif;
+  }
+  
+  .font-ultra {
+    font-family: var(--font-gotham-ultra), sans-serif;
+  }
 }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-.fixed.z-50 button svg {
-  display: none;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  /* overflow-x: hidden; */
-  scroll-behavior: smooth;
-}
-
-/* 
-body {
-  background: -moz-radial-gradient(
-    circle at 81% 51%,
-    rgba(230, 228, 242, 1) 0%,
-    rgba(230, 228, 242, 1) 17%,
-    rgba(208, 204, 217, 1) 27%,
-    rgba(240, 240, 242, 1) 69%,
-    rgba(208, 204, 217, 1) 83%,
-    rgba(181, 176, 191, 1) 100%
-  );
-
-  background: -webkit-radial-gradient(
-    circle at 81% 51%,
-    rgba(230, 228, 242, 1) 0%,
-    rgba(230, 228, 242, 1) 17%,
-    rgba(208, 204, 217, 1) 27%,
-    rgba(240, 240, 242, 1) 69%,
-    rgba(208, 204, 217, 1) 83%,
-    rgba(181, 176, 191, 1) 100%
-  );
-
-  background: -o-radial-gradient(
-    circle at 81% 51%,
-    rgba(230, 228, 242, 1) 0%,
-    rgba(230, 228, 242, 1) 17%,
-    rgba(208, 204, 217, 1) 27%,
-    rgba(240, 240, 242, 1) 69%,
-    rgba(208, 204, 217, 1) 83%,
-    rgba(181, 176, 191, 1) 100%
-  );
-
-  background: -ms-radial-gradient(
-    circle at 81% 51%,
-    rgba(230, 228, 242, 1) 0%,
-    rgba(230, 228, 242, 1) 17%,
-    rgba(208, 204, 217, 1) 27%,
-    rgba(240, 240, 242, 1) 69%,
-    rgba(208, 204, 217, 1) 83%,
-    rgba(181, 176, 191, 1) 100%
-  );
-
-  background: radial-gradient(
-    circle at 81% 51%,
-    rgba(230, 228, 242, 1) 0%,
-    rgba(230, 228, 242, 1) 17%,
-    rgba(208, 204, 217, 1) 27%,
-    rgba(240, 240, 242, 1) 69%,
-    rgba(208, 204, 217, 1) 83%,
-    rgba(181, 176, 191, 1) 100%
-  );
-} 
-  */

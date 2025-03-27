@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        rounded: ['var(--font-gotham-rounded)', 'sans-serif'],
+        ultra: ['var(--font-gotham-ultra)', 'sans-serif'],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

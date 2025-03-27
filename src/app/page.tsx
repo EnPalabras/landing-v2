@@ -1,10 +1,10 @@
 import AboutSection from '@/components/Contact/QuienesSomos'
 import Features from '@/components/Features/Features'
-import NewHero from '@/components/HeroSection/NewHero'
+import NewHero from '@/components/NewHero'
 import Products from '@/components/ProductsSection/Products'
 import Testimonials from '@/components/Testimonials/Testimonials'
 import TeamSection from '@/components/NextLevel/NextLevel'
-import Resources from '@/components/Resources/Resources'
+import Resources from '@/components/Resources'
 
 const questions = [
   {
