@@ -49,16 +49,16 @@ export default function HeroSection() {
   // Función para manejar el scroll suave
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
     e.preventDefault();
-    
+
     const element = document.getElementById(targetId);
-    
+
     if (element) {
       // Realizar scroll suave
       element.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
-      
+
       // Actualizar la URL sin recargar la página
       window.history.pushState({}, '', `/#${targetId}`);
     }
@@ -66,8 +66,8 @@ export default function HeroSection() {
 
   return (
     <section className="w-full relative overflow-hidden max-w-7xl">
-    
-      <motion.div 
+
+      <motion.div
         className="container py-16 lg:py-20 relative z-10"
         variants={containerVariants}
         initial="hidden"
@@ -76,7 +76,7 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 xl:gap-20 md:items-center">
           <div className="flex flex-col">
             {/* Badge/Chip */}
-            <motion.div 
+            <motion.div
               className="flex justify-center lg:justify-start"
               variants={itemVariants}
             >
@@ -108,18 +108,18 @@ export default function HeroSection() {
             </motion.div>
 
             {/* Main Title */}
-            <motion.h1 
-  className="scroll-m-20 text-4xl sm:text-5xl tracking-tight  
+            <motion.h1
+              className="scroll-m-20 text-4xl sm:text-5xl tracking-tight  
   lg:text-6xl text-center lg:text-start text-balance text-gray-900"
-  style={{ fontFamily: 'var(--font-gotham-ultra)', fontWeight: 'bold' }}
-  variants={itemVariants}
->
+              style={{ fontFamily: 'var(--font-gotham-ultra)', fontWeight: 'bold' }}
+              variants={itemVariants}
+            >
               No somos un<span className="text-purple-800"> regalo
-              corporativo</span>
+                corporativo</span>
             </motion.h1>
 
             {/* Subtitle */}
-            <motion.p 
+            <motion.p
               className="mt-4 text-md xl:text-lg text-center lg:text-start max-w-3xl mx-auto lg:mx-0 text-gray-700"
               style={{ fontFamily: 'var(--font-gotham-rounded)' }}
               variants={itemVariants}
@@ -131,22 +131,22 @@ export default function HeroSection() {
             </motion.p>
 
             {/* Action Buttons */}
-            <motion.div 
+            <motion.div
               className="mt-7 grid grid-cols-2 place-items-center gap-3 w-full sm:inline-flex justify-center lg:justify-start"
               variants={itemVariants}
             >
-              <a 
+              <a
                 href="https://mayoristas.enpalabras.com.ar/contacto"
                 target="_blank"
-              
+
                 className="transition-all hover:scale-105 shadow-lg bg-purple-600 
                 hover:bg-purple-700 text-white font-medium py-3 px-5 rounded-md inline-flex items-center justify-center"
               >
                 Contactanos
                 <ExternalLinkIcon className="ml-2 w-4 h-4" />
               </a>
-              <a 
-                href="#experiencias" 
+              <a
+                href="#experiencias"
                 onClick={(e) => handleSmoothScroll(e, 'experiencias')}
                 className="transition-all hover:scale-105 bg-white/80 backdrop-blur-sm hover:bg-white/90 border-purple-300 border text-gray-800 font-medium py-3 px-5 rounded-md inline-flex items-center justify-center"
               >
@@ -155,7 +155,7 @@ export default function HeroSection() {
             </motion.div>
 
             {/* Ratings and Reviews */}
-            <motion.div 
+            <motion.div
               className="mt-8 flex flex-row justify-center lg:justify-start"
               variants={itemVariants}
             >
@@ -181,7 +181,7 @@ export default function HeroSection() {
           </div>
 
           {/* Hero Images */}
-          <motion.div 
+          <motion.div
             className="hidden lg:block relative lg:order-1 pr-12 sm:pr-0 place-self-center"
             variants={imageVariants}
           >
@@ -197,7 +197,7 @@ export default function HeroSection() {
                 loading="eager" // Carga inmediata para contenido above the fold
               />
 
-              <motion.div 
+              <motion.div
                 className=" absolute origin-bottom-right scale-90 -bottom-20 -right-20 z-20"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
