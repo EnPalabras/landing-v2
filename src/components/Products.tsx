@@ -325,7 +325,7 @@ const ProductCard = ({ product }: { product: any }) => {
 
 export default function Products() {
   return (
-    <section className="bg-transparent w-full py-16" id="productos">
+    <section className="bg-transparent w-full py-16 max-w-7xl" id="productos">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-700 mb-4" 

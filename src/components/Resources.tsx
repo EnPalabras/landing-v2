@@ -55,7 +55,7 @@ const cardVariants = {
 
 export const Resources = () => {
   return (
-    <section className="w-full py-10 lg:py-24 relative overflow-hidden" id="recursos">
+    <section className="w-full py-10 lg:py-24 relative overflow-hidden max-w-7xl" id="recursos">
       {/* Formas decorativas de fondo - optimizadas para móvil */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-20 right-0 w-48 h-48 md:w-64 md:h-64 rounded-full bg-purple-300/20 blur-2xl"></div>
