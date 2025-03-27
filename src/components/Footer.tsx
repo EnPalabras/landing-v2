@@ -213,25 +213,25 @@ export default function Footer() {
               <Link 
                 href="https://www.facebook.com/p/En-Palabras-100063708482183/"
                 target="_blank"
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-purple-100 text-purple-600 hover:bg-purple-600 hover:text-white transition-colors duration-200"
+                className="flex items-center justify-center p-2 w-10 h-10 rounded-full bg-purple-100 text-purple-600 hover:bg-purple-600 hover:text-white transition-colors duration-200"
                 aria-label="Facebook"
               >
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-5 w-5 " />
               </Link>
               
               <Link 
                 href="https://www.instagram.com/enpalabrass"
                 target="_blank"
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-purple-100 text-purple-600 hover:bg-purple-600 hover:text-white transition-colors duration-200"
+                className="flex items-center justify-center p-2 w-10 h-10 rounded-full bg-purple-100 text-purple-600 hover:bg-purple-600 hover:text-white transition-colors duration-200"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </Link>
               
               <Link 
-                href="https://www.linkedin.com/company/en-palabras"
+                href="https://www.linkedin.com/company/enpalabras"
                 target="_blank"
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-purple-100 text-purple-600 hover:bg-purple-600 hover:text-white transition-colors duration-200"
+                className="flex items-center justify-center p-2 w-10 h-10 rounded-full bg-purple-100 text-purple-600 hover:bg-purple-600 hover:text-white transition-colors duration-200"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
