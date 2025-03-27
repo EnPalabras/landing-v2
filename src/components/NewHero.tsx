@@ -65,7 +65,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="w-full relative overflow-hidden max-w-7xl pb-10">
+    <section className="w-full relative overflow-hidden max-w-7xl">
 
       <motion.div
         className="container py-16 lg:py-20 relative z-10"
