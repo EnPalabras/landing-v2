@@ -1,9 +1,9 @@
-import AboutSection from '@/components/Contact/QuienesSomos'
-import Features from '@/components/Features/Features'
+import AboutSection from '@/components/QuienesSomos'
+import Features from '@/components/Features'
 import NewHero from '@/components/NewHero'
-import Products from '@/components/ProductsSection/Products'
-import Testimonials from '@/components/Testimonials/Testimonials'
-import TeamSection from '@/components/NextLevel/NextLevel'
+import Products from '@/components/Products'
+import Testimonials from '@/components/Testimonials'
+import TeamSection from '@/components/NextLevel'
 import Resources from '@/components/Resources'
 
 const questions = [
@@ -36,14 +36,16 @@ const questions = [
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center w-full">
+    <main className="flex flex-col items-center w-full mx-auto">
       <NewHero />
       <Resources />
       <Products />
       <Testimonials />
       <Features />
+      <div className='bg-white w-full'>
       <TeamSection />
       <AboutSection />
+      </div>
     </main>
   )
 }

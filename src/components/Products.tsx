@@ -209,7 +209,8 @@ const ImageGallery = ({ images }: { images: string[] }) => {
 // Componente para la tarjeta de producto original
 const ProductCard = ({ product }: { product: any }) => {
   return (
-    <div className="overflow-hidden bg-white rounded-lg shadow h-full flex flex-col">
+    <div className="overflow-hidden bg-white rounded-lg 
+    shadow h-full flex flex-col">
       <div className="relative flex-grow flex flex-col p-5">
         {/* Imagen con altura fija */}
         <div className="block mb-6 border-b border-gray-200 pb-4">
@@ -237,7 +238,7 @@ const ProductCard = ({ product }: { product: any }) => {
             <h3 className="mt-2 text-2xl font-bold text-gray-900 h-14 flex items-center" style={{ fontFamily: 'var(--font-gotham-ultra)' }}>
               {product.title}
             </h3>
-            <p className="mt-3 text-base text-gray-600 h-24 overflow-hidden">
+            <p className="mt-3 text-sm md:text-base text-gray-600 h-24 overflow-hidden">
               {product.description}
             </p>
           </div>
@@ -246,7 +247,8 @@ const ProductCard = ({ product }: { product: any }) => {
           <div className="mt-4">
             <Dialog>
               <DialogTrigger asChild>
-                <button className="inline-flex items-center justify-center pb-0.5 text-base font-semibold text-purple-600 transition-all duration-200 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600">
+                <button className="inline-flex items-center 
+                justify-center pb-0.5 text-sm md:text-base font-semibold text-purple-600 transition-all duration-200 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600">
                   Conocer más
                   <svg
                     className="w-5 h-5"
@@ -326,11 +328,11 @@ export default function Products() {
     <section className="bg-transparent w-full py-16" id="productos">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-5xl lg:text-6xl font-bold text-gray-700 mb-4" 
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-700 mb-4" 
           style={{ fontFamily: 'var(--font-gotham-ultra)' }}>
             Descubrí nuestros productos
           </h2>
-          <p className="text-gray-700 max-w-2xl text-xl mx-auto">
+          <p className="text-gray-700 max-w-2xl text-base md:text-lg mx-auto">
             Conocé nuestra <b>línea de juegos</b> y experiencias diseñadas para conectar a personas a través de conversaciones significativas.
           </p>
         </div>
@@ -344,7 +346,7 @@ export default function Products() {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
               whileHover={{ y: -5 }}
-              className="h-full"
+              className="h-full shadow-md"
             >
               <ProductCard product={product} />
             </motion.div>
@@ -354,7 +356,7 @@ export default function Products() {
         <div className="mt-16 text-center">
           <Button 
             size="lg"
-            className="bg-white hover:bg-gray-100 text-[#6E5686] px-8 py-3 font-bold text-lg"
+            className="bg-white hover:bg-gray-100 text-[#6E5686] px-8 py-3 font-bold text-lg shadow-md"
             asChild
           >
             <Link href="https://enpalabras.com.ar" target="_blank">

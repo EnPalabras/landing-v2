@@ -4,7 +4,7 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import './globals.css'
 import { Toaster } from '@/components/ui/toaster'
 import Navbar from '@/components/NavBar/Navbar'
-import Footer from '@/components/Footer/Footer'
+import Footer from '@/components/Footer'
 import { gothamRounded, gothamUltra } from '@/lib/fonts'
 
 export const metadata: Metadata = {
@@ -45,11 +45,7 @@ export default function RootLayout({
     <html lang="es" className={`${gothamRounded.variable} ${gothamUltra.variable}`}>
       <body className={gothamRounded.className}>
           {/* Fondo con degradado y efecto de forma */}
-          <div className="fixed inset-0 w-full h-full z-[-1] bg-gradient-to-br from-purple-100 via-purple-200 to-pink-300">
-
-        {/* Formas decorativas*/}
-      
-      </div>
+          <div className="fixed inset-0 w-full h-full z-[-1] bg-gradient-to-br from-purple-100 via-purple-200 to-pink-300">     </div>
         <Navbar />
         {children}
         <Footer />

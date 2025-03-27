@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import epContenido1 from '@/../public/assets/contenido/epContenido1.webp';
+import { ExternalLinkIcon } from 'lucide-react';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -45,6 +46,24 @@ const imageVariants = {
 };
 
 export default function HeroSection() {
+  // Función para manejar el scroll suave
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
+    e.preventDefault();
+    
+    const element = document.getElementById(targetId);
+    
+    if (element) {
+      // Realizar scroll suave
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      
+      // Actualizar la URL sin recargar la página
+      window.history.pushState({}, '', `/#${targetId}`);
+    }
+  };
+
   return (
     <section className="w-full relative overflow-hidden">
     
@@ -62,15 +81,16 @@ export default function HeroSection() {
               variants={itemVariants}
             >
               <Link
-                href="https://www.enpalabras.com.ar/productos/descubriendo-juego-de-cartas-para-ninos/"
+                href="https://www.enpalabras.com.ar/productos/edicion-familia-juego-de-cartas/"
                 target="_blank"
-                className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-6 text-sm text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white/95 group shadow-sm"
+                className="inline-flex justify-between items-center 
+                py-1 px-1 pr-4 mb-6 text-sm text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white/95 group shadow-sm"
               >
                 <span className="text-xs bg-purple-600 rounded-full text-white px-4 py-1.5 mr-3">
                   Nuevo
                 </span>
                 <span className="text-sm font-medium group-hover:underline">
-                  Juego para Niños y Adultos <b>Descubriendo</b>
+                  Juego de Cartas | <b>Edición Familia</b>
                 </span>
                 <svg
                   className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1"
@@ -89,7 +109,7 @@ export default function HeroSection() {
 
             {/* Main Title */}
             <motion.h1 
-              className="scroll-m-20 text-5xl tracking-tight  
+              className="scroll-m-20 text-6xl tracking-tight  
               lg:text-6xl text-center lg:text-start text-balance text-gray-900"
               style={{ fontFamily: 'var(--font-gotham-ultra)', fontWeight: 'bold' }}
               variants={itemVariants}
@@ -98,11 +118,9 @@ export default function HeroSection() {
               corporativo</span>
             </motion.h1>
 
-            
-
             {/* Subtitle */}
             <motion.p 
-              className="mt-4 text-lg text-center lg:text-start max-w-3xl mx-auto lg:mx-0 text-gray-700"
+              className="mt-4 text-md xl:text-lg text-center lg:text-start max-w-3xl mx-auto lg:mx-0 text-gray-700"
               style={{ fontFamily: 'var(--font-gotham-rounded)' }}
               variants={itemVariants}
             >
@@ -117,23 +135,23 @@ export default function HeroSection() {
               className="mt-7 grid grid-cols-2 place-items-center gap-3 w-full sm:inline-flex justify-center lg:justify-start"
               variants={itemVariants}
             >
-              <Link href="#contacto">
-                <Button 
-                  size="lg" 
-                  className="transition-all hover:scale-105 shadow-lg bg-purple-600 hover:bg-purple-700"
-                >
-                  Contactanos
-                </Button>
-              </Link>
-              <Link href="#experiencias">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="transition-all hover:scale-105 bg-white/80 backdrop-blur-sm hover:bg-white/90 border-purple-300"
-                >
-                  Experiencias
-                </Button>
-              </Link>
+              <a 
+                href="https://mayoristas.enpalabras.com.ar/contacto"
+                target="_blank"
+              
+                className="transition-all hover:scale-105 shadow-lg bg-purple-600 
+                hover:bg-purple-700 text-white font-medium py-3 px-5 rounded-md inline-flex items-center justify-center"
+              >
+                Contactanos
+                <ExternalLinkIcon className="ml-2 w-4 h-4" />
+              </a>
+              <a 
+                href="#experiencias" 
+                onClick={(e) => handleSmoothScroll(e, 'experiencias')}
+                className="transition-all hover:scale-105 bg-white/80 backdrop-blur-sm hover:bg-white/90 border-purple-300 border text-gray-800 font-medium py-3 px-5 rounded-md inline-flex items-center justify-center"
+              >
+                Experiencias
+              </a>
             </motion.div>
 
             {/* Ratings and Reviews */}
@@ -164,7 +182,7 @@ export default function HeroSection() {
 
           {/* Hero Images */}
           <motion.div 
-            className="relative lg:order-1 pr-12 sm:pr-0 place-self-center"
+            className="hidden lg:block relative lg:order-1 pr-12 sm:pr-0 place-self-center"
             variants={imageVariants}
           >
             <div className="relative max-w-lg">
@@ -178,7 +196,7 @@ export default function HeroSection() {
               />
 
               <motion.div 
-                className="absolute origin-bottom-right scale-90 -bottom-20 -right-20 z-20"
+                className=" absolute origin-bottom-right scale-90 -bottom-20 -right-20 z-20"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
