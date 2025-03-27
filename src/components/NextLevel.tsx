@@ -68,7 +68,7 @@ export default function NextLevel() {
       
       {/* Contenido principal */}
       <div className="container px-4 mx-auto relative z-10">
-        <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12 lg:p-16 max-w-4xl mx-auto overflow-hidden">
+        <div className="bg-white/70 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12 lg:p-16 max-w-4xl mx-auto overflow-hidden">
           {/* Insignia superior */}
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
