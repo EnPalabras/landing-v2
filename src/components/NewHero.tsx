@@ -212,7 +212,6 @@ export default function HeroSection() {
                     height={250}
                     className="rounded-xl shadow-xl relative"
                     loading="lazy" // Carga diferida para contenido below the fold
-                    placeholder="blur" // Puedes considerar usar blur placeholder
                   />
                 </div>
               </motion.div>
