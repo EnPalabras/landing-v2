@@ -109,7 +109,7 @@ export default function HeroSection() {
 
             {/* Main Title */}
             <motion.h1
-              className="scroll-m-20 text-4xl sm:text-5xl tracking-tight  
+              className="scroll-m-20 text-5xl sm:text-6xl tracking-tight  
   lg:text-6xl text-center lg:text-start text-balance text-gray-900"
               style={{ fontFamily: 'var(--font-gotham-ultra)', fontWeight: 'bold' }}
               variants={itemVariants}
