@@ -109,11 +109,11 @@ export default function HeroSection() {
 
             {/* Main Title */}
             <motion.h1 
-              className="scroll-m-20 text-6xl tracking-tight  
-              lg:text-6xl text-center lg:text-start text-balance text-gray-900"
-              style={{ fontFamily: 'var(--font-gotham-ultra)', fontWeight: 'bold' }}
-              variants={itemVariants}
-            >
+  className="scroll-m-20 text-4xl sm:text-5xl tracking-tight  
+  lg:text-6xl text-center lg:text-start text-balance text-gray-900"
+  style={{ fontFamily: 'var(--font-gotham-ultra)', fontWeight: 'bold' }}
+  variants={itemVariants}
+>
               No somos un<span className="text-purple-800"> regalo
               corporativo</span>
             </motion.h1>
@@ -192,7 +192,9 @@ export default function HeroSection() {
                 width={500}
                 height={400}
                 className="object-bottom rounded-xl shadow-xl z-10 relative"
-                priority
+                priority  // Esta imagen está en el viewport inicial
+                quality={85} // Especifica calidad para mejor balance
+                loading="eager" // Carga inmediata para contenido above the fold
               />
 
               <motion.div 
@@ -209,6 +211,8 @@ export default function HeroSection() {
                     width={300}
                     height={250}
                     className="rounded-xl shadow-xl relative"
+                    loading="lazy" // Carga diferida para contenido below the fold
+                    placeholder="blur" // Puedes considerar usar blur placeholder
                   />
                 </div>
               </motion.div>
