@@ -72,7 +72,7 @@ export default function RootLayout({
         <Footer />
         <Toaster />
       </body>
-      <GoogleAnalytics gaId="G-FZYCR4YBVC" />
+      {/* <GoogleAnalytics gaId="G-FZYCR4YBVC" /> */}
       <GoogleTagManager gtmId="GTM-WBMVQW86" />
     </html>
   )
