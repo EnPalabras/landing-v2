@@ -6,6 +6,7 @@ import { Toaster } from '@/components/ui/toaster'
 import Navbar from '@/components/NavBar/Navbar'
 import Footer from '@/components/Footer'
 import { gothamRounded, gothamUltra } from '@/lib/fonts'
+import FloatingWhatsAppButton from '@/components/floating-whatsapp'
 
 
 export const metadata: Metadata = {
@@ -71,6 +72,8 @@ export default function RootLayout({
         {children}
         <Footer />
         <Toaster />
+        <FloatingWhatsAppButton />
+
       </body>
       {/* <GoogleAnalytics gaId="G-FZYCR4YBVC" /> */}
       <GoogleTagManager gtmId="GTM-WBMVQW86" />

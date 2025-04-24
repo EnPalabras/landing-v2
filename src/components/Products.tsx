@@ -20,6 +20,7 @@ import { ArrowRight, ExternalLink } from 'lucide-react';
 const products = [
   {
     id: 'desconectados',
+    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/desconectados-juego-de-cartas-regalo-empresarial/',
     title: 'Desconectados',
     subtitle: 'Jugá y Conectá',
     badge: 'Juegos',
@@ -46,34 +47,37 @@ const products = [
     }
   },
   {
-    id: 'destapados',
-    title: 'Destapados',
-    subtitle: 'Explorá y destapá tabúes',
+    id: 'edicion-familia',
+    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/familia-juego-de-cartas-regalo-empresarial/',
+    title: 'Edición Familia',
+    subtitle: 'Juga en Familia',
     badge: 'Juegos',
-    description: 'Destapados es un disparador de encuentros festivos e íntimos, corporales y emocionales.',
-    image: 'https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp',
+    description: 'Es una invitación a explorar tus raíces y construir tu identidad integrando tu historia en un espacio de intimidad y seguridad emocional.',
+    image: 'https://acdn-us.mitiendanube.com/stores/001/705/915/products/8-85f0117fe39f08c01117325532846850-640-0.webp',
     details: {
-      fullDescription: 'Destapados es un disparador de encuentros festivos e íntimos, corporales y emocionales. Las cartas buscan destapar los estereotipos y prejuicios que se acarrean, invitándonos a sumergirnos libremente en nuestros pensamientos, emociones, preferencias y, si así lo desean, su cuerpo.',
+      fullDescription: 'Este juego es una invitación a explorar tus raíces, comprender las dinámicas familiares, y construir tu identidad integrando tu historia en un espacio de intimidad y seguridad emocional.',
       sections: [
         {
-          title: '200 cartas divididas en 4 secciones:',
+          title: '191 cartas divididas en 3 secciones:',
           items: [
-            { icon: '🔥', title: 'Picantes:', text: 'cartas que encienden tus experiencias' },
-            { icon: '🎲', title: 'Random:', text: 'cartas para improvisar' },
-            { icon: '😌', title: 'Profundidad:', text: 'cartas para intimar' },
-            { icon: '🤓', title: 'Perspectiva:', text: 'cartas para debatir sobre las relaciones' }
+            { icon: '🌱', title: 'Raíces:', text: 'cartas para conocer la historia de nuestros antepasados' },
+            { icon: '🧘🏻', title: 'Profundidad:', text: 'para entender los desafíos y dinámicas de los vínculos familiares' },
+            { icon: '✨', title: 'Sobre Mí:', text: 'para reflexionar sobre la influencia de la familia, valorando tu individualidad y quién elegís ser' }
+
           ]
         }
       ],
       images: [
-        'https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp',
-        'https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-en-pareja1-7c065a974fe2fe441e16685193060239-640-0.webp',
-        'https://acdn.mitiendanube.com/stores/001/705/915/products/juego-para-amigos-y-pareja1-04a8074a73b8e6859b16728612235787-1024-1024.webp'
+        'https://acdn-us.mitiendanube.com/stores/001/705/915/products/8-85f0117fe39f08c01117325532846850-640-0.webp',
+        'https://acdn-us.mitiendanube.com/stores/001/705/915/products/7-d59b7a520048b26c2d17325532839908-640-0.webp',
+        'https://acdn-us.mitiendanube.com/stores/001/705/915/products/11-e262f7736a1b028bd017325532838627-1024-1024.webp'
       ]
     }
   },
+ 
   {
     id: 'descubriendo',
+    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/descubriendo-juego-de-cartas-para-ninos/',
     title: 'Descubriendo',
     subtitle: 'Jugá con los más chicos',
     badge: 'Juegos',
@@ -100,8 +104,9 @@ const products = [
       ]
     }
   },
-  {
+ /* {
     id: 'ano-nuevo',
+    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/anonuevo/',
     title: 'Edición Año Nuevo',
     subtitle: 'Hacé tu balance',
     badge: 'Juegos',
@@ -125,9 +130,39 @@ const products = [
       ]
     }
   },
+  */
+  {
+    id: 'destapados',
+    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/destapados-juego-de-cartas-regalo-empresarial/',
+    title: 'Destapados',
+    subtitle: 'Explorá y destapá tabúes',
+    badge: 'Juegos',
+    description: 'Destapados es un disparador de encuentros festivos e íntimos, corporales y emocionales.',
+    image: 'https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp',
+    details: {
+      fullDescription: 'Destapados es un disparador de encuentros festivos e íntimos, corporales y emocionales. Las cartas buscan destapar los estereotipos y prejuicios que se acarrean, invitándonos a sumergirnos libremente en nuestros pensamientos, emociones, preferencias y, si así lo desean, su cuerpo.',
+      sections: [
+        {
+          title: '200 cartas divididas en 4 secciones:',
+          items: [
+            { icon: '🔥', title: 'Picantes:', text: 'cartas que encienden tus experiencias' },
+            { icon: '🎲', title: 'Random:', text: 'cartas para improvisar' },
+            { icon: '😌', title: 'Profundidad:', text: 'cartas para intimar' },
+            { icon: '🤓', title: 'Perspectiva:', text: 'cartas para debatir sobre las relaciones' }
+          ]
+        }
+      ],
+      images: [
+        'https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp',
+        'https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-en-pareja1-7c065a974fe2fe441e16685193060239-640-0.webp',
+        'https://acdn.mitiendanube.com/stores/001/705/915/products/juego-para-amigos-y-pareja1-04a8074a73b8e6859b16728612235787-1024-1024.webp'
+      ]
+    }
+  },
   {
     id: 'journal',
     title: 'Journal',
+    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/journal-en-palabras/',
     subtitle: 'Conectá con vos mismo',
     badge: 'Journal',
     description: 'Es un diario personal que te invita a dialogar sinceramente con vos mismo.',
@@ -154,6 +189,7 @@ const products = [
   },
   {
     id: 'personalizadas',
+    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/cartas-personalizadas/',
     title: 'Cartas Personalizadas',
     subtitle: 'Personalizá tu Juego',
     badge: 'Juegos',
@@ -305,7 +341,7 @@ const ProductCard = ({ product }: { product: any }) => {
                 
                 <div className="mt-6 pt-4 border-t flex justify-between items-center">
                   <Button className="bg-purple-600 hover:bg-purple-700 gap-2" asChild>
-                    <Link href="https://enpalabras.com.ar" target="_blank">
+                    <Link href={product.externalLink} target="_blank">
                       Comprar ahora
                       <ExternalLink size={16} />
                     </Link>
@@ -359,7 +395,7 @@ export default function Products() {
             className="bg-white hover:bg-gray-100 text-[#6E5686] px-8 py-3 font-bold text-lg shadow-md"
             asChild
           >
-            <Link href="https://enpalabras.com.ar" target="_blank">
+            <Link href="https://mayoristas.enpalabras.com.ar" target="_blank">
               Visitar tienda online
             </Link>
           </Button>

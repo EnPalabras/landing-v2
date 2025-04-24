@@ -160,7 +160,7 @@ export const Resources = () => {
                     
                     <div className="mt-auto">
                       <Link
-                        href="https://mayoristas.enpalabras.com.ar/"
+                        href="https://mayoristas.enpalabras.com.ar/regalo-empresarial"
                         target="_blank"
                         className="group inline-flex items-center text-[#6E5686] font-bold hover:text-purple-900 transition-colors"
                       >
@@ -237,7 +237,7 @@ export const Resources = () => {
               className="mt-10 md:mt-16 text-center"
               variants={itemVariants}
             >
-              <Link href="https://mayoristas.enpalabras.com.ar/" target="_blank">
+              <Link href="https://mayoristas.enpalabras.com.ar/regalo-empresarial" target="_blank">
                 <Button 
                   size="lg" 
                   className="bg-[#6E5686] hover:bg-[#513a67] text-white px-5 py-5 md:px-8 md:py-6 text-base md:text-lg rounded-lg shadow-md transition-all hover:shadow-xl"
