@@ -4,12 +4,12 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Dialog, 
-  DialogContent, 
-  DialogDescription, 
-  DialogHeader, 
-  DialogTitle, 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
   DialogTrigger,
   DialogClose
 } from "@/components/ui/dialog";
@@ -74,7 +74,30 @@ const products = [
       ]
     }
   },
- 
+  {
+    id: 'desconocidos',
+    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/desconocidos-juego-de-cartas-reventa/',
+    title: 'Desconocidos',
+    subtitle: 'Rompé el Hielo',
+    badge: 'Juegos',
+    description: 'Desconocidos es una invitación a romper el hielo sin presión, conectar sin forzar y tener charlas reales desde el primer encuentro.',
+    image: 'https://dcdn-us.mitiendanube.com/stores/005/267/426/products/_mercado-libre_imagen___meli-ads-creativos-para-desconocidos_desconocidos_8_mayo-0ef5925151eb551ae717486336831124-640-0.jpg',
+    details: {
+      fullDescription: 'Desconocidos es una invitación a romper el hielo sin presión, conectar sin forzar y tener charlas reales desde el primer encuentro. Ideal para citas, juntadas, viajes o cualquier momento donde haya ganas de conocerse más y mejor.',
+      sections: [
+        {
+          title: 'Una única sección con 50 preguntas',
+          items: [
+          ]
+        }
+      ],
+      images: [
+        'https://dcdn-us.mitiendanube.com/stores/005/267/426/products/_mercado-libre_imagen___meli-ads-creativos-para-desconocidos_desconocidos_8_mayo-0ef5925151eb551ae717486336831124-640-0.jpg',
+        'https://dcdn-us.mitiendanube.com/stores/005/267/426/products/_mercado-libre_imagen___meli-ads-creativos-para-desconocidos_desconocidos_7_mayo-bd78d16afa0b181a3717486336831610-640-0.jpg',
+        'https://dcdn-us.mitiendanube.com/stores/005/267/426/products/_mercado-libre_imagen___meli-ads-creativos-para-desconocidos_desconocidos_7_mayo-1-029f0b92bb38697c5717486336839353-640-0.jpg'
+      ]
+    }
+  },
   {
     id: 'descubriendo',
     externalLink: 'https://mayoristas.enpalabras.com.ar/productos/descubriendo-juego-de-cartas-para-ninos/',
@@ -104,61 +127,7 @@ const products = [
       ]
     }
   },
- /* {
-    id: 'ano-nuevo',
-    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/anonuevo/',
-    title: 'Edición Año Nuevo',
-    subtitle: 'Hacé tu balance',
-    badge: 'Juegos',
-    description: 'Es una invitación a reflexionar sobre el año que pasó para recibir el nuevo con mayor conciencia.',
-    image: 'https://acdn.mitiendanube.com/stores/001/705/915/products/ano-nuevo-21-f8bd8bdad5b29c1ad216679475830811-640-0.webp',
-    details: {
-      fullDescription: 'Es una invitación a reflexionar sobre el año que pasó para recibir el nuevo con mayor conciencia. Las cartas funcionan como disparadores para revisar lo vivido, cerrar etapas y conectar con los deseos y objetivos para el próximo ciclo.',
-      sections: [
-        {
-          title: '50 cartas con dos secciones:',
-          items: [
-            { icon: '💫', title: 'Retrospección:', text: 'cartas para registrar cómo te hacen sentir tus experiencias pasadas' },
-            { icon: '✨', title: 'Proyección:', text: 'cartas que te guían a alcanzar lo que te gustaría integrar' }
-          ]
-        }
-      ],
-      images: [
-        'https://acdn.mitiendanube.com/stores/001/705/915/products/ano-nuevo-21-f8bd8bdad5b29c1ad216679475830811-640-0.webp',
-        'https://acdn.mitiendanube.com/stores/001/705/915/products/juego-de-cartas-edicion-ano-nuevo-en-palabrasss1-ae868838e90fff7e7d16680888314539-640-0.webp',
-        'https://acdn.mitiendanube.com/stores/001/705/915/products/11-6abc5a8f6a44714a8516678314509320-1024-1024.webp'
-      ]
-    }
-  },
-  */
-  {
-    id: 'destapados',
-    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/destapados-juego-de-cartas-regalo-empresarial/',
-    title: 'Destapados',
-    subtitle: 'Explorá y destapá tabúes',
-    badge: 'Juegos',
-    description: 'Destapados es un disparador de encuentros festivos e íntimos, corporales y emocionales.',
-    image: 'https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp',
-    details: {
-      fullDescription: 'Destapados es un disparador de encuentros festivos e íntimos, corporales y emocionales. Las cartas buscan destapar los estereotipos y prejuicios que se acarrean, invitándonos a sumergirnos libremente en nuestros pensamientos, emociones, preferencias y, si así lo desean, su cuerpo.',
-      sections: [
-        {
-          title: '200 cartas divididas en 4 secciones:',
-          items: [
-            { icon: '🔥', title: 'Picantes:', text: 'cartas que encienden tus experiencias' },
-            { icon: '🎲', title: 'Random:', text: 'cartas para improvisar' },
-            { icon: '😌', title: 'Profundidad:', text: 'cartas para intimar' },
-            { icon: '🤓', title: 'Perspectiva:', text: 'cartas para debatir sobre las relaciones' }
-          ]
-        }
-      ],
-      images: [
-        'https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp',
-        'https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-en-pareja1-7c065a974fe2fe441e16685193060239-640-0.webp',
-        'https://acdn.mitiendanube.com/stores/001/705/915/products/juego-para-amigos-y-pareja1-04a8074a73b8e6859b16728612235787-1024-1024.webp'
-      ]
-    }
-  },
+
   {
     id: 'journal',
     title: 'Journal',
@@ -212,25 +181,86 @@ const products = [
       ]
     }
   }
+  /* 
+  {
+     id: 'ano-nuevo',
+     externalLink: 'https://mayoristas.enpalabras.com.ar/productos/anonuevo/',
+     title: 'Edición Año Nuevo',
+     subtitle: 'Hacé tu balance',
+     badge: 'Juegos',
+     description: 'Es una invitación a reflexionar sobre el año que pasó para recibir el nuevo con mayor conciencia.',
+     image: 'https://acdn.mitiendanube.com/stores/001/705/915/products/ano-nuevo-21-f8bd8bdad5b29c1ad216679475830811-640-0.webp',
+     details: {
+       fullDescription: 'Es una invitación a reflexionar sobre el año que pasó para recibir el nuevo con mayor conciencia. Las cartas funcionan como disparadores para revisar lo vivido, cerrar etapas y conectar con los deseos y objetivos para el próximo ciclo.',
+       sections: [
+         {
+           title: '50 cartas con dos secciones:',
+           items: [
+             { icon: '💫', title: 'Retrospección:', text: 'cartas para registrar cómo te hacen sentir tus experiencias pasadas' },
+             { icon: '✨', title: 'Proyección:', text: 'cartas que te guían a alcanzar lo que te gustaría integrar' }
+           ]
+         }
+       ],
+       images: [
+         'https://acdn.mitiendanube.com/stores/001/705/915/products/ano-nuevo-21-f8bd8bdad5b29c1ad216679475830811-640-0.webp',
+         'https://acdn.mitiendanube.com/stores/001/705/915/products/juego-de-cartas-edicion-ano-nuevo-en-palabrasss1-ae868838e90fff7e7d16680888314539-640-0.webp',
+         'https://acdn.mitiendanube.com/stores/001/705/915/products/11-6abc5a8f6a44714a8516678314509320-1024-1024.webp'
+       ]
+     }
+   }, 
+   */
+
+  /**
+    {
+     id: 'destapados',
+     externalLink: 'https://mayoristas.enpalabras.com.ar/productos/destapados-juego-de-cartas-regalo-empresarial/',
+     title: 'Destapados',
+     subtitle: 'Explorá y destapá tabúes',
+     badge: 'Juegos',
+     description: 'Destapados es un disparador de encuentros festivos e íntimos, corporales y emocionales.',
+     image: 'https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp',
+     details: {
+       fullDescription: 'Destapados es un disparador de encuentros festivos e íntimos, corporales y emocionales. Las cartas buscan destapar los estereotipos y prejuicios que se acarrean, invitándonos a sumergirnos libremente en nuestros pensamientos, emociones, preferencias y, si así lo desean, su cuerpo.',
+       sections: [
+         {
+           title: '200 cartas divididas en 4 secciones:',
+           items: [
+             { icon: '🔥', title: 'Picantes:', text: 'cartas que encienden tus experiencias' },
+             { icon: '🎲', title: 'Random:', text: 'cartas para improvisar' },
+             { icon: '😌', title: 'Profundidad:', text: 'cartas para intimar' },
+             { icon: '🤓', title: 'Perspectiva:', text: 'cartas para debatir sobre las relaciones' }
+           ]
+         }
+       ],
+       images: [
+         'https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-para-previas1-7fcace62e2e91e71a216685193063177-640-0.webp',
+         'https://acdn.mitiendanube.com/stores/001/705/915/products/destapados-juego-de-cartas-en-pareja1-7c065a974fe2fe441e16685193060239-640-0.webp',
+         'https://acdn.mitiendanube.com/stores/001/705/915/products/juego-para-amigos-y-pareja1-04a8074a73b8e6859b16728612235787-1024-1024.webp'
+       ]
+     }
+   },
+  */
+
+
 ];
 
 // Componente para la imagen con puntos de navegación
 const ImageGallery = ({ images }: { images: string[] }) => {
   const [currentImage, setCurrentImage] = useState(0);
-  
+
   return (
     <div className="relative overflow-hidden rounded-lg">
       <div className="relative h-72 sm:h-96 w-full">
-        <Image 
-          src={images[currentImage]} 
-          alt="Imagen del producto" 
+        <Image
+          src={images[currentImage]}
+          alt="Imagen del producto"
           fill
           className="object-contain"
         />
       </div>
       <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
         {images.map((_, index) => (
-          <button 
+          <button
             key={index}
             className={`w-3 h-3 rounded-full ${currentImage === index ? 'bg-purple-600' : 'bg-gray-300'}`}
             onClick={() => setCurrentImage(index)}
@@ -264,7 +294,7 @@ const ProductCard = ({ product }: { product: any }) => {
             </div>
           </div>
         </div>
-        
+
         {/* Contenido con alturas fijas */}
         <div className="flex flex-col flex-1 justify-between">
           <div>
@@ -278,7 +308,7 @@ const ProductCard = ({ product }: { product: any }) => {
               {product.description}
             </p>
           </div>
-          
+
           {/* Botón siempre al mismo nivel */}
           <div className="mt-4">
             <Dialog>
@@ -300,7 +330,7 @@ const ProductCard = ({ product }: { product: any }) => {
                   </svg>
                 </button>
               </DialogTrigger>
-              
+
               <DialogContent className="sm:max-w-4xl max-h-[90vh] overflow-y-auto">
                 <DialogHeader className="pb-4 border-b">
                   <DialogTitle className="text-3xl text-[#6E5686]" style={{ fontFamily: 'var(--font-gotham-ultra)' }}>
@@ -310,17 +340,17 @@ const ProductCard = ({ product }: { product: any }) => {
                     {product.subtitle}
                   </DialogDescription>
                 </DialogHeader>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
                   <div>
                     <ImageGallery images={product.details.images} />
                   </div>
-                  
+
                   <div>
                     <p className="text-gray-700 text-base mb-6">
                       {product.details.fullDescription}
                     </p>
-                    
+
                     {product.details.sections.map((section: any, index: React.Key) => (
                       <div key={index} className="mt-4 bg-gray-50 p-4 rounded-lg">
                         <h4 className="font-bold text-lg mb-3 text-purple-700">{section.title}</h4>
@@ -338,7 +368,7 @@ const ProductCard = ({ product }: { product: any }) => {
                     ))}
                   </div>
                 </div>
-                
+
                 <div className="mt-6 pt-4 border-t flex justify-between items-center">
                   <Button className="bg-purple-600 hover:bg-purple-700 gap-2" asChild>
                     <Link href={product.externalLink} target="_blank">
@@ -364,15 +394,15 @@ export default function Products() {
     <section className="bg-transparent w-full py-16 max-w-7xl" id="productos">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-700 mb-4" 
-          style={{ fontFamily: 'var(--font-gotham-ultra)' }}>
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-700 mb-4"
+            style={{ fontFamily: 'var(--font-gotham-ultra)' }}>
             Descubrí nuestros productos
           </h2>
           <p className="text-gray-700 max-w-2xl text-base md:text-lg mx-auto">
             Conocé nuestra <b>línea de juegos</b> y experiencias diseñadas para conectar a personas a través de conversaciones significativas.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product) => (
             <motion.div
@@ -388,9 +418,9 @@ export default function Products() {
             </motion.div>
           ))}
         </div>
-        
+
         <div className="mt-16 text-center">
-          <Button 
+          <Button
             size="lg"
             className="bg-white hover:bg-gray-100 text-[#6E5686] px-8 py-3 font-bold text-lg shadow-md"
             asChild

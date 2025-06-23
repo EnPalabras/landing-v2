@@ -125,9 +125,9 @@ export default function Footer() {
                 <span>info@enpalabras.com.ar</span>
               </a>
               
-              <a href="tel:+5491123456789" className="flex items-center text-gray-600 hover:text-purple-600 transition-colors">
+              <a href="tel:+5491132006504" className="flex items-center text-gray-600 hover:text-purple-600 transition-colors">
                 <Phone className="h-5 w-5 mr-3 text-purple-500" />
-                <span>+54 9 11 2345-6789</span>
+                <span>+54 9 11 3200-6504</span>
               </a>
               
               <div className="flex items-center text-gray-600">

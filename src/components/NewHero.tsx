@@ -81,7 +81,7 @@ export default function HeroSection() {
               variants={itemVariants}
             >
               <Link
-                href="https://mayoristas.enpalabras.com.ar/productos/familia-juego-de-cartas-regalo-empresarial/"
+                href="https://mayoristas.enpalabras.com.ar/productos/desconocidos-juego-de-cartas-reventa/"
                 target="_blank"
                 className="inline-flex justify-between items-center 
                 py-1 px-1 pr-4 mb-6 text-sm text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white/95 group shadow-sm"
@@ -90,7 +90,7 @@ export default function HeroSection() {
                   Nuevo
                 </span>
                 <span className="text-sm font-medium group-hover:underline">
-                  Juego de Cartas | <b>Edición Familia</b>
+                  Rompé el Hielo | <b>Edición Desconocidos</b>
                 </span>
                 <svg
                   className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1"
@@ -173,7 +173,7 @@ export default function HeroSection() {
                   ))}
                 </div>
                 <p className="mt-3 text-sm text-gray-700">
-                  <span className="font-bold">4.9</span> / 5 - más de 5k
+                  <span className="font-bold">4.9</span> / 5 - más de 10k
                   reviews
                 </p>
               </div>

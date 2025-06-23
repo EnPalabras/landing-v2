@@ -19,10 +19,8 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Inicio
-            </NavigationMenuLink>
+          <Link href="/" className={navigationMenuTriggerStyle()}>
+            Inicio
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
@@ -87,24 +85,18 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/#experiencias" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Experiencias
-            </NavigationMenuLink>
+          <Link href="/#experiencias" className={navigationMenuTriggerStyle()}>
+            Experiencias
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/#recursos" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Recursos
-            </NavigationMenuLink>
+          <Link href="/#recursos" className={navigationMenuTriggerStyle()}>
+            Recursos
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/#nosotros" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Nosotros
-            </NavigationMenuLink>
+          <Link href="/#nosotros" className={navigationMenuTriggerStyle()}>
+            Nosotros
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
