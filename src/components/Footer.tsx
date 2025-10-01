@@ -28,12 +28,12 @@ const footerLinks = {
     { name: 'Nosotros', href: '#nosotros' },
   ],
   tienda: [
-    { name: 'Inicio', href: 'https://enpalabras.com.ar', external: true },
-    { name: 'Comprar', href: 'https://www.enpalabras.com.ar/productos/', external: true },
-    { name: 'Sobre Nosotros', href: 'https://www.enpalabras.com.ar/quienessomos/', external: true },
+    { name: 'Inicio', href: 'https://empresas.enpalabras.com.ar', external: true },
+    { name: 'Comprar', href: 'https://empresas.enpalabras.com.ar/productos/', external: true },
+    { name: 'Sobre Nosotros', href: 'https://empresas.enpalabras.com.ar/quienessomos/', external: true },
   ],
   otros: [
-    { name: 'Cápsula del Tiempo', href: 'https://www.enpalabras.com.ar/capsula-del-tiempo/', external: true },
+    { name: 'Cápsula del Tiempo', href: 'https://empresas.enpalabras.com.ar/capsula-del-tiempo/', external: true },
     { name: 'Ruleta de Preguntas', href: 'https://www.enpalabrasjuegos.com.ar/', external: true },
     { name: 'Mercado Libre', href: 'https://www.mercadolibre.com.ar/juego-de-cartas-desconectados-en-palabras/p/MLA17840062?pdp_filters=item_id:MLA1109575910', external: true },
   ],

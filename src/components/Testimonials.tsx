@@ -166,7 +166,7 @@ export default function Testimonials() {
           className="text-center"
         >
           <Link
-            href="https://mayoristas.enpalabras.com.ar/contacto"
+            href="https://empresas.enpalabras.com.ar/contacto"
             className="bg-white text-[#6E5686] rounded-lg uppercase py-4 px-8 font-bold            
             text-xl hover:bg-purple-100 transition-all duration-300 ease-in-out shadow-lg"
             style={{ fontFamily: 'var(--font-gotham-ultra)' }}

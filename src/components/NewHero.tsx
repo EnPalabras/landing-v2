@@ -81,7 +81,7 @@ export default function HeroSection() {
               variants={itemVariants}
             >
               <Link
-                href="https://mayoristas.enpalabras.com.ar/productos/desconocidos-juego-de-cartas-reventa/"
+                href="https://empresas.enpalabras.com.ar/productos/desconocidos-juego-de-cartas-reventa/"
                 target="_blank"
                 className="inline-flex justify-between items-center 
                 py-1 px-1 pr-4 mb-6 text-sm text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white/95 group shadow-sm"
@@ -136,7 +136,7 @@ export default function HeroSection() {
               variants={itemVariants}
             >
               <a
-                href="https://mayoristas.enpalabras.com.ar/regalo-empresarial"
+                href="https://empresas.enpalabras.com.ar/regalo-empresarial"
                 target="_blank"
 
                 className="transition-all hover:scale-105 shadow-lg bg-purple-600 

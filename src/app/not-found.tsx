@@ -23,7 +23,7 @@ export default function NotFound() {
                 <Button size={'lg'}>Inicio</Button>
               </a>
               <a
-                href="https://www.enpalabras.com.ar/"
+                href="https://empresas.enpalabras.com.ar/"
                 className=""
                 target="_blank"
               >

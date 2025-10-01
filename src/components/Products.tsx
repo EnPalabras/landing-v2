@@ -20,7 +20,7 @@ import { ArrowRight, ExternalLink } from 'lucide-react';
 const products = [
   {
     id: 'desconectados',
-    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/desconectados-juego-de-cartas-regalo-empresarial/',
+    externalLink: 'https://empresas.enpalabras.com.ar/productos/desconectados-juego-de-cartas-regalo-empresarial/',
     title: 'Desconectados',
     subtitle: 'Jugá y Conectá',
     badge: 'Juegos',
@@ -48,7 +48,7 @@ const products = [
   },
   {
     id: 'edicion-familia',
-    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/familia-juego-de-cartas-regalo-empresarial/',
+    externalLink: 'https://empresas.enpalabras.com.ar/productos/familia-juego-de-cartas-regalo-empresarial/',
     title: 'Edición Familia',
     subtitle: 'Juga en Familia',
     badge: 'Juegos',
@@ -76,7 +76,7 @@ const products = [
   },
   {
     id: 'desconocidos',
-    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/desconocidos-juego-de-cartas-reventa/',
+    externalLink: 'https://empresas.enpalabras.com.ar/productos/desconocidos-juego-de-cartas-reventa/',
     title: 'Desconocidos',
     subtitle: 'Rompé el Hielo',
     badge: 'Juegos',
@@ -100,7 +100,7 @@ const products = [
   },
   {
     id: 'descubriendo',
-    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/descubriendo-juego-de-cartas-para-ninos/',
+    externalLink: 'https://empresas.enpalabras.com.ar/productos/descubriendo-juego-de-cartas-para-ninos/',
     title: 'Descubriendo',
     subtitle: 'Jugá con los más chicos',
     badge: 'Juegos',
@@ -131,7 +131,7 @@ const products = [
   {
     id: 'journal',
     title: 'Journal',
-    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/journal-en-palabras/',
+    externalLink: 'https://empresas.enpalabras.com.ar/productos/journal-en-palabras/',
     subtitle: 'Conectá con vos mismo',
     badge: 'Journal',
     description: 'Es un diario personal que te invita a dialogar sinceramente con vos mismo.',
@@ -158,7 +158,7 @@ const products = [
   },
   {
     id: 'personalizadas',
-    externalLink: 'https://mayoristas.enpalabras.com.ar/productos/cartas-personalizadas/',
+    externalLink: 'https://empresas.enpalabras.com.ar/productos/cartas-personalizadas/',
     title: 'Cartas Personalizadas',
     subtitle: 'Personalizá tu Juego',
     badge: 'Juegos',
@@ -184,7 +184,7 @@ const products = [
   /* 
   {
      id: 'ano-nuevo',
-     externalLink: 'https://mayoristas.enpalabras.com.ar/productos/anonuevo/',
+     externalLink: 'https://empresas.enpalabras.com.ar/productos/anonuevo/',
      title: 'Edición Año Nuevo',
      subtitle: 'Hacé tu balance',
      badge: 'Juegos',
@@ -213,7 +213,7 @@ const products = [
   /**
     {
      id: 'destapados',
-     externalLink: 'https://mayoristas.enpalabras.com.ar/productos/destapados-juego-de-cartas-regalo-empresarial/',
+     externalLink: 'https://empresas.enpalabras.com.ar/productos/destapados-juego-de-cartas-regalo-empresarial/',
      title: 'Destapados',
      subtitle: 'Explorá y destapá tabúes',
      badge: 'Juegos',

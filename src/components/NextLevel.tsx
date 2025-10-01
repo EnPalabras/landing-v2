@@ -163,7 +163,7 @@ export default function NextLevel() {
             transition={{ duration: 0.5, delay: 0.7 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Link href="https://mayoristas.enpalabras.com.ar/">
+            <Link href="https://empresas.enpalabras.com.ar/">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
